@@ -1,0 +1,24 @@
+{ 
+    "baseUrl": "https://contentpartner-ar.uat2.myabsorb.com",
+"experimentalStudio": true,
+
+"defaultCommandTimeout": 30000,
+"requestTimeout": 10000,
+"env": {
+    "environment": "uat2",
+    "api_Key": "WeSWezMnmqchUjwS9GHRiMsvNeCfgPGo",
+    "client_ID": "e56accce-de8a-4085-a0cd-5f1df5f19083",
+    "topDEPT_ID": "99182633-93c0-4d72-9ba9-a47ff7aa23e3"
+   
+},
+"retries": {
+    "runMode": 1,
+    "openMode": 1
+},
+"video": false,
+
+"reporter": "junit",
+"reporterOptions": {
+  "mochaFile": "results/result-[hash].xml"
+}
+}

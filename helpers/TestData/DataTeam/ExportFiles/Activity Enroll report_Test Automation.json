@@ -1,0 +1,282 @@
+{
+  "ContactEmailAddresses": [],
+  "ExpressionGroups": [
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "ActivityEnrollments1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    },
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "Users1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    },
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "CourseEnrollments1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    }
+  ],
+  "TableConnections": [
+    {
+      "Columns": [],
+      "Name": "CourseEnrollments",
+      "TableSchema": "dbo",
+      "TableName": "CourseEnrollments",
+      "AliasedTableName": "CourseEnrollments1",
+      "Order": 4,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Name",
+          "Alias": "ILCName",
+          "Order": 7,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.CourseEnrollments_dbo.Courses_CourseId",
+      "TableSchema": "dbo",
+      "TableName": "Courses",
+      "AliasedTableName": "Courses1",
+      "Order": 5,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Status",
+          "Alias": "Status",
+          "Order": 3,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateCompleted",
+          "Alias": "DateCompleted",
+          "Order": 5,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateStarted",
+          "Alias": "DateStarted",
+          "Order": 4,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.CourseEnrollments_dbo.Users_UserId",
+      "TableSchema": "dbo",
+      "TableName": "CourseEnrollments",
+      "AliasedTableName": "CourseEnrollments1",
+      "Order": 1,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Name",
+          "Alias": "SessionName",
+          "Order": 6,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.ActivityEnrollments_dbo.Sessions_SessionId",
+      "TableSchema": "dbo",
+      "TableName": "Sessions",
+      "AliasedTableName": "Sessions1",
+      "Order": 3,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "LastName",
+          "Alias": "LastName",
+          "Order": 1,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "FirstName",
+          "Alias": "FirstName",
+          "Order": 0,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Username",
+          "Alias": "Username",
+          "Order": 2,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 0,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Status",
+          "Alias": "ActivityEnrollmentStatus",
+          "Order": 12,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Score",
+          "Alias": "Score",
+          "Order": 10,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateCompleted",
+          "Alias": "ActivityEnrollmentDateCompleted",
+          "Order": 9,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateStarted",
+          "Alias": "ActivityEnrollmentDateStarted",
+          "Order": 8,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "TimeSpentTicks",
+          "Alias": "TimeSpentTicks",
+          "Order": 11,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.ActivityEnrollments_dbo.CourseEnrollments_InstructorLedCourseEnrollmentId",
+      "TableSchema": "dbo",
+      "TableName": "ActivityEnrollments",
+      "AliasedTableName": "ActivityEnrollments1",
+      "Order": 2,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    }
+  ],
+  "ClientId": "4b28d81f-d6e3-4dd2-821a-b16e8ddc674e",
+  "Name": "Activity Enrollment report_Test Automation",
+  "FileName": "ActivityEnrollmentAutomation",
+  "FileEncoding": 0,
+  "QuoteAllFields": false,
+  "Delimiter": ",",
+  "Description": null,
+  "JiraId": "DATA-2485",
+  "CronExpression": null,
+  "TimeZoneId": null,
+  "CommandTimeout": 60,
+  "FileType": 0,
+  "DateAdded": "2023-06-19T22:41:25.93",
+  "DateEdited": "2023-06-19T22:42:02.987",
+  "AddedBy": "qa.dms@absorblms.com",
+  "EditedBy": "qa.dms@absorblms.com",
+  "IsDeleted": false,
+  "DateDeleted": null,
+  "AppendTimestamp": false,
+  "FoldersDeleteHangfireJobId": null,
+  "AppendClientNameAndId": true,
+  "DeliveryMethod": 0,
+  "FtpProtocol": null,
+  "FtpUsername": null,
+  "FtpPassword": null,
+  "FtpServerUrl": null,
+  "FtpChangeDirectoryLocation": null,
+  "FtpPort": null,
+  "FtpOverwriteExistingFile": false,
+  "FtpTransferMode": null,
+  "FtpTextEncoding": null,
+  "FtpConnectionMode": null,
+  "InnerOrs": true,
+  "OverrideDateTimeFormat": null,
+  "ExportType": 0
+}

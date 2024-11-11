@@ -1,0 +1,48 @@
+  key: JOB1
+  other:
+    clean-working-dir: false
+  tasks:
+  - checkout:
+      force-clean-build: 'false'
+      description: Checkout Default Repository
+  - script:
+      interpreter: BINSH_OR_CMDEXE
+      scripts:
+      - docker login -u ${bamboo.HubDockerComUser} -p ${bamboo.HubDockerComSecret}
+      description: Authenticate with Docker Hub
+  - script:
+      interpreter: BINSH_OR_CMDEXE
+      scripts:
+      - |-
+        VERSION=$(echo "${bamboo.planRepository.branchName}" | sed -e 's/.*\///')
+        version=$VERSION
+        docker pull absorbsoftware/absorb-cypress:$version
+        docker run --rm -v $(pwd)/results:/app/results -v $(pwd)/mochawesome-report:/app/mochawesome-report -v $(pwd)/mochawesome-report.rar:/app/mochawesome-report.rar -v $(pwd)/cypress:/app/cypress -v $(pwd)/helpers:/app/helpers -v $(pwd)/cypress.config.js:/app/cypress.config.js  absorbsoftware/absorb-cypress:$version npm run ${bamboo.test-value}
+      description: run the absorb-cypress container
+  final-tasks:
+  - test-parser:
+      type: junit
+      ignore-time: 'false'
+      test-results: results/*.xml
+      description: Parse Results
+  artifacts:
+  - name: GUIA Error Screenshots
+    location: cypress/screenshots
+    pattern: '**/*.png'
+    shared: true
+    required: false
+  - name: GUIA Error Videos
+    location: cypress/videos
+    pattern: '**/*.mp4'
+    shared: true
+    required: false
+  - name: junit results
+    location: results
+    pattern: '*'
+    shared: true
+    required: false  
+  - name: allure-results
+    location: ''
+    pattern: 'allure-results/**'
+    shared: true
+    required: false    

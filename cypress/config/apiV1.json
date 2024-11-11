@@ -1,0 +1,26 @@
+{
+    "baseUrl": "https://apiautomation.qa2.myabsorb.com/api/Rest/v1",
+    "experimentalStudio": true,
+    
+    "defaultCommandTimeout": 15000,
+    "requestTimeout": 10000,
+    "env": {
+      "environment": "qa2",
+      "absorb_api_key": "c25d83dd-20bc-47a3-98c9-487c7ef9bab4",
+      "client_ID": "90dd4a27-29c1-45a7-8a5a-c14f2f5417d6",
+      "topDEPT_ID": "970a27c0-0ddd-44f7-89b4-05570b58a6c9",
+      "COURSE_ILC_02_ADMIN_APPROVAL_ID": "3cbaeccb-dc6f-4d14-8f03-5ae1aafcb30c",
+      "COURSE_CURR_02_ADMIN_APPROVAL_ID": "f9d156eb-0441-4043-bc52-d1afcac06f07",
+      "COURSE_OC_02_ADMIN_APPROVAL_ID": "d91aae21-6958-47fd-bd73-0a8328671a13"
+    },
+    "retries": {
+      "runMode": 1,
+      "openMode": 1
+    },
+    "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

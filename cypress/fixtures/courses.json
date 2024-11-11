@@ -1,0 +1,68 @@
+{
+    "OC_FILTER_01_NAME": "GUIAuto - Filter - OC01",
+    "OC_FILTER_02_NAME": "GUIAuto - Filter - OC02",
+    "OC_FILTER_03_NAME": "GUIAuto - Filter - OC03",
+    "OC_FILTER_03_DESCRIPTION": "GUIAuto - Filter - OC03 - Description",
+    "OC_FILTER_03_AUDIENCE": "GUIAuto - Filter - OC03 - Audience",
+    "OC_FILTER_03_GOALS": "GUIAuto - Filter - OC03 - Goals",
+    "OC_FILTER_04_OJT": "GUIAuto - Filter - OC04 - OJT",
+    "OC_FILTER_05_NAME": "GUIAuto - Filter - OC05",
+    "OC_ECOMM_01_NAME": "GUIA - ECOMM - OC - 01",
+    "OC_ECOMM_FREE_COURSE_01_NAME" : "GUIA - ECOMM - OC - Free 01",
+    "OC_01_LEARNER_UNENROLL_NAME": "GUIAuto - Learner Unenroll - OC01",
+    "OC_01_LEARNER_UNENROLL_OBJECT_NAME": "GUIAuto - Learner Unenroll - OC01 - Object",
+    "OC_01_MANDATORY_NAME": "GUIAuto - Mandatory - OC01",
+    "OC_ECOMM_CHILD_01_NAME" :"GUIA - ECOMM - OC - Child 01",
+    "OC_ECOMM_CHILD_02_NAME" :"GUIA - ECOMM - OC - Child 02",
+
+    "ILC_FILTER_01_NAME": "GUIAuto - Filter - ILC01",
+    "ILC_SESSION_01_NAME" : "GUIAuto - Filter - ILCSession01",
+    "ILC_ECOMM_CHILD_01_NAME" : "GUIA - ECOMM - ILC - Child 01",
+    "ILC_ECOMM_CHILD_02_NAME" : "GUIA - ECOMM - ILC - Child 02",
+    "ILC_ECOMM_01_NAME" : "GUIA - ECOMM - ILC - 01",
+    "ILC_ECOMM_01_SESSION_NAME" : "GUIA - ECOMM - ILC - 01 - Bulk Enrollments Session",
+    "ILC_ECOMM_FREE_COURSE_01_NAME" : "GUIA - ECOMM - ILC - Free 01",
+    "ILC_ECOMM_FREE_01_SESSION_NAME" : "GUIA - ECOMM - ILC - Free 01 - Bulk Enrollments Session Rec",
+    "ILC_02_ADMIN_APPROVAL_NAME" : "GUIA - ILC - 02 - Admin Approval",
+    "ILC_03_LEARNER_UNENROLL_NAME": "GUIAuto - Learner Unenroll - ILC03",
+    "ILC_03_LEARNER_UNENROLL_NAME_SESSION_NAME": "GUIAuto - Learner Unenroll - ILC03 - Session",
+    "ILC_01_MANDATORY_NAME": "GUIAuto - Mandatory - ILC01",
+    
+    "CB_FILTER_01_NAME" : "GUIAuto - Filter - CB01",
+    "CB_FILTER_01_OC_CHILD_01" : "GUIAuto - Filter - CB01 - OC - Child 01",
+    "CB_ECOMM_01_NAME" : "GUIA - ECOMM - CB - 01",
+    "CB_ECOMM_FREE_COURSE_01_NAME" : "GUIA - ECOMM - CB - Free 01",
+    "CB_ECOMM_FREE_01_OC_CHILD_01" : "GUIA - ECOMM - CB - Free 01 - OC - Child 01",
+    "CB_ECOMM_FREE_01_ILC_CHILD_02" : "GUIA - ECOMM - CB - Free 01 - ILC - Child 02",
+
+    "CURR_FILTER_01_NAME" : "GUIAuto - Filter - CURR01",
+    "CURR_FILTER_01_OC_CHILD_01" : "GUIAuto - Filter - CURR01 - OC - Child 01",
+    "CURR_02_ADMIN_APPROVAL_NAME" : "GUIA - CURR - 02 - Admin Approval",
+    "CURR_ECOMM_01_NAME" : "GUIA - ECOMM - CURR - 01",
+    "CURR_ECOMM_FREE_COURSE_01_NAME" : "GUIA - ECOMM - CURR - Free 01",
+    "CURR_01_LEARNER_UNENROLL_NAME": "GUIAuto - Learner Unenroll - CURR01",
+    "CURR_01_MANDATORY_NAME": "GUIAuto - Mandatory - CURR01",
+
+    "OC_LESSON_ACT_OVAS_NAME" : "GUIAuto - Lesson Act - OC - With OVAS",
+    "OC_LESSON_ACT_OVAS_OBJECT_NAME" : "GUIAuto - Lesson Act - OC - With OVAS - Object",
+    "OC_LESSON_ACT_OVAS_VIDEO_NAME" : "GUIAuto - Lesson Act - OC - With OVAS - Video",
+    "OC_LESSON_ACT_OVAS_ASSESSMENT_NAME" : "GUIAuto - Lesson Act - OC - With OVAS - Assessment",
+    "OC_LESSON_ACT_OVAS_SURVEY_NAME" : "GUIAuto - Lesson Act - OC - With OVAS - Survey",
+
+    "OC_LESSON_ACT_SSTA_NAME" : "GUIAuto - Lesson Act - OC - With SSTA",
+    "OC_LESSON_ACT_SSTA_SCORM_1_2_NAME" : "GUIAuto - Lesson Act - OC - With SSTA - SCORM 1.2",
+    "OC_LESSON_ACT_SSTA_SCORM_2004_NAME" : "GUIAuto - Lesson Act - OC - With SSTA - SCORM 2004",
+    "OC_LESSON_ACT_SSTA_TIN_CAN_NAME" : "GUIAuto - Lesson Act - OC - With SSTA - Tin Can",
+    "OC_LESSON_ACT_SSTA_AICC_NAME" : "GUIAuto - Lesson Act - OC - With SSTA - AICC",
+
+    "OC_02_ADMIN_APPROVAL_NAME" : "GUIA - OC - 02 - Admin Approval", 
+
+    "CATAGORY_01_NAME": "GUIA - Category - DO NOT DELETE", 
+
+    "COURSE_PRICE_15": "15",
+    "COURSE_PRICE_20": "20",
+    "COURSE_PRICE_25": "25"
+
+
+
+}

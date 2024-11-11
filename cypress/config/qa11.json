@@ -1,0 +1,24 @@
+{
+    "baseUrl": "https://esther.11.qa.absorb.ad",
+    "experimentalStudio": true,
+    
+    "defaultCommandTimeout": 30000,
+    "requestTimeout": 10000,
+    "env": {
+        "environment": "qa11",
+        "api_Key": "28mEtN98KKt5tx5fLG-hlB6oqTuY2InL",
+        "client_ID": "d3f45722-a3b1-4017-9347-604eeb0fd9b3",
+        "topDEPT_ID": "074bdb2e-c445-4e31-94c5-a061ba2c8637"
+       
+    },
+    "retries": {
+        "runMode": 1,
+        "openMode": 1
+    },
+    "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

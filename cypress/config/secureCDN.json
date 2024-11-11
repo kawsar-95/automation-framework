@@ -1,0 +1,34 @@
+{
+  "baseUrl": "https://secure-cdn.qa-myabsorb.com/",
+  "experimentalStudio": true,
+
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 10000,
+  "env": {
+    "environment": "qaSecureCDN",
+    "api_Key": "eDAkzjOczvpfipgJu5zGX08fUaEAIB5l",
+    "client_ID": "2581ff97-a900-4d61-b088-b98edbc54d9f",
+    "topDEPT_ID": "5dcbaca6-0bdb-4ec6-a174-77b44a87ef33",
+    "subDEPT_A_ID": "0c604e4d-f761-4947-aad0-be13c8cf00ff",
+    "COURSE_ILC_02_ADMIN_APPROVAL_ID": "3fbf2c6e-ca95-466a-8fd3-bfe0babd9368",
+    "COURSE_CURR_02_ADMIN_APPROVAL_ID": "b994c3a6-11ed-4fe5-a517-128864a44857",
+    "COURSE_OC_02_ADMIN_APPROVAL_ID": "14d05499-ceb0-4b28-a0b3-81b603b2e1f1",
+    "A_COLLABORATION_ID": "c38a8a4e-3625-49f5-8cdc-f0b4057d8c38",
+    "B_COLLABORATION_ID": "96546f5d-af4a-4c31-b18d-9c79d82d390d",
+    "ROOT_PORTAL": "https://blatant.qa.myabsorb.com/",
+    "createURL": "https://staging.absorbcreate.com/",
+    "createProdURL": "https://app.absorbcreate.com/",
+    "createTrialURL": "https://staging.absorbcreate.com/trial",
+    "createProdTrialURL": "https://app.absorbcreate.com/trial"
+  },
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
+  "video": false,
+
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/result-[hash].xml"
+  }
+}

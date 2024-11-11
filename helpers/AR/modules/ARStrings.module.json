@@ -1,0 +1,4 @@
+{
+    "NO_ENROLLMENT_RULE_SELECTED_ERROR_MSG" : "At least one rule must be defined when 'Specific' is chosen for Enrollment.",
+    "AR_TOAST_MSG_FORGOT_PASSWORD_LINK_SENT_SUCCESSFUL" : "A password reset link has been sent to you."
+}

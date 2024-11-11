@@ -1,0 +1,861 @@
+{
+  "Modules": [
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.DepartmentAdminModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "DepartmentId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "DepartmentLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "UserId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "UserLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 4,
+      "UserCorrelation": 0,
+      "DepartmentCorrelation": 1,
+      "ResetDepartmentAdminFilter": false,
+      "IncludeSubDepartment": false,
+      "LeaveAllAdminAsIs": false,
+      "IgnoreIfAlreadyDepartmentAdmin": false,
+      "LeaveGroupAdminAsIs": false,
+      "ModuleName": "Department Admin Import",
+      "FileStartsWith": "Sample DepartmentAdmin",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": false,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-08T15:43:34.337",
+      "DateEdited": "2023-05-08T15:43:34.337",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    },
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.GroupAdminModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "GroupId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "GroupLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "UserId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "UserLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 5,
+      "UserCorrelation": 0,
+      "GroupCorrelation": 1,
+      "LeaveAllAdminAsIs": false,
+      "LeaveDepartmentAdminAsIs": false,
+      "LeaveExistingGroupAdminAsIs": false,
+      "ModuleName": "Group Admin Import",
+      "FileStartsWith": "Sample GroupAdmin",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": false,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-08T19:52:35.743",
+      "DateEdited": "2023-05-08T19:52:35.743",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    },
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.VenueModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "Address": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Address",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "City": {
+        "PropertyMappings": [],
+        "ClientColumnName": "City",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Country": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Country",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Department": {
+        "PropertyMappings": [],
+        "ClientColumnName": "DepartmentLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Details": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Details",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ExternalId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "ExternalId",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "MaxClassSize": {
+        "PropertyMappings": [],
+        "ClientColumnName": "MaxClassSize",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Name": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Name",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Password": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Password",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "PhoneNumber": {
+        "PropertyMappings": [],
+        "ClientColumnName": "PhoneNumber",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "PostalCode": {
+        "PropertyMappings": [],
+        "ClientColumnName": "PostalCode",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Province": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Province",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Url": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Url",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Username": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Username",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "VenueType": {
+        "PropertyMappings": [],
+        "ClientColumnName": "VenueType",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 6,
+      "DepartmentCorrelation": 1,
+      "VenueCorrelation": 1,
+      "ModuleName": "Venue Import",
+      "FileStartsWith": "Sample Venue",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": false,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-08T19:56:55.363",
+      "DateEdited": "2023-05-08T19:56:55.363",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    },
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.SessionModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "ApprovalType": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "AttendanceReminder": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Course": {
+        "PropertyMappings": [],
+        "ClientColumnName": "CourseLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Description": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "EnrollmentEndDate": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "EnrollmentStartDate": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ExternalId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "ExternalId",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "GeneratedClassEndDate": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "GeneratedClassStartDate": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "GeneratedClassVenue": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Instructors": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "IsAttendanceReminder": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "IsWaitlistEnabled": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "MaximumClassSize": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "MinimumClassSize": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Name": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Name",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Notes": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 9,
+      "SessionCorrelation": 1,
+      "InstructorCorrelation": null,
+      "CourseCorrelation": 2,
+      "VenueCorrelation": null,
+      "AdvancedColumnDelimiter": null,
+      "ModuleName": "Session Import",
+      "FileStartsWith": "Sample Session",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": false,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-09T14:22:06.873",
+      "DateEdited": "2023-05-09T14:22:06.873",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    },
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.GroupAssignmentModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "Action": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Group": {
+        "PropertyMappings": [],
+        "ClientColumnName": "GroupLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "User": {
+        "PropertyMappings": [],
+        "ClientColumnName": "UserLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 12,
+      "UserLookup": 0,
+      "GroupLookup": 1,
+      "ModuleName": "Group Assignment Import",
+      "FileStartsWith": "Sample GroupAssignment",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": false,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-08T15:58:40.367",
+      "DateEdited": "2023-05-08T15:58:40.367",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    },
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.ClassModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "ClassEndDate": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Class End Date",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ClassId": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ClassStartDate": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Class Start Date",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ClassTimeZone": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ClassVenueLookup": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ExternalId": {
+        "PropertyMappings": [],
+        "ClientColumnName": "External Id",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "MeetingDescription": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "MeetingUrl": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "SessionLookup": {
+        "PropertyMappings": [],
+        "ClientColumnName": "Session Lookup ",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 25,
+      "ClassCorrelation": 0,
+      "SessionCorrelation": 1,
+      "VenueCorrelation": null,
+      "ModuleName": "Class Import",
+      "FileStartsWith": "Sample Class",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": false,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-09T14:32:02.893",
+      "DateEdited": "2023-05-09T14:32:02.893",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    },
+    {
+      "NamespaceModuleType": "AbsorbLMS.Scheduler.Entities.CourseFileUploaderModule",
+      "ClientContactEmailAddress": [],
+      "PropertyCombineChains": [],
+      "Course": {
+        "PropertyMappings": [],
+        "ClientColumnName": "CourseLookup",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "File": {
+        "PropertyMappings": [],
+        "ClientColumnName": "File",
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "FileIsPublic": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual1": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual2": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual3": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual4": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "Virtual5": {
+        "PropertyMappings": [],
+        "ClientColumnName": null,
+        "DefaultValue": null,
+        "AddedBy": "qa.dms@absorblms.com",
+        "EditedBy": "qa.dms@absorblms.com"
+      },
+      "ModuleType": 27,
+      "CourseCorrelation": 2,
+      "ModuleName": "Course File Uploader Import",
+      "FileStartsWith": "Sample Course File Upload",
+      "FileExtension": "csv",
+      "FileDelimiter": ",",
+      "WillThrowOnMissingField": true,
+      "IgnoreQuotes": false,
+      "SkipEmptyRecords": true,
+      "FileIsDelta": true,
+      "DifferentialAgainstDatabase": false,
+      "ProcessOptions": 0,
+      "SendWarningEmail": true,
+      "SendErrorEmail": true,
+      "SendSuccessEmail": false,
+      "SendNoFilesFoundEmail": true,
+      "ClientName": null,
+      "FileEncoding": 0,
+      "EntityStatus": 0,
+      "IsDeleted": false,
+      "DateTimeFormat": null,
+      "DateAdded": "2023-05-08T15:38:57.987",
+      "DateEdited": "2023-05-08T15:38:57.987",
+      "AddedBy": "qa.dms@absorblms.com",
+      "EditedBy": "qa.dms@absorblms.com",
+      "DateDeleted": null
+    }
+  ],
+  "ClientId": "4b28d81f-d6e3-4dd2-821a-b16e8ddc674e",
+  "Name": "Sunny - Regression Test - Batch 2 - Automation",
+  "Description": null,
+  "ExternalApplicationId": null,
+  "JiraId": "DATA-2359",
+  "CronExpression": null,
+  "TimeZoneId": null,
+  "DecryptPgpFile": false,
+  "ArchiveLast": false,
+  "IsHistoricalImported": false,
+  "DisableEmails": false,
+  "EmailToNotifyWhenSmtpSettingsGetRestored": null,
+  "EntityStatus": 0,
+  "IsDeleted": false,
+  "DateAdded": "2023-05-08T15:37:59.537",
+  "DateEdited": "2023-05-09T14:32:02.893",
+  "AddedBy": "qa.dms@absorblms.com",
+  "EditedBy": "qa.dms@absorblms.com",
+  "DateDeleted": null,
+  "FoldersDeleteHangfireJobId": null
+}

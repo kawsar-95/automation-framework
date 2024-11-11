@@ -1,0 +1,4 @@
+CourseLookup,SessionLookup,ClassLookup,UserLookup,Attendance
+QA10_TestILC01,QA10_TestSession01,SampleClass0101,QA10_Test01,1
+QA10_TestILC01,QA10_TestSession01,SampleClass0101,QA10_Test02,1
+QA10_TestILC01,QA10_TestSession01,SampleClass0101,QA10_Test03,1

@@ -1,0 +1,85 @@
+{
+    "bodySMTPHealthCheck": {
+        "_description": "Request to create a new smtp test email.",
+        "_email_description": "The email recipient of the health request.",
+        "_email_required": true,
+        "_email_minLength": "1",
+        "email": "",
+        "_subject_description": "The email subject of the health request.",
+        "_subject_required": true,
+        "_subject_minLength": "1",
+        "subject": "",
+        "_body_description": "The email body of the health request.",
+        "_body_required": true,
+        "_body_minLength": "1",
+        "body": ""
+    },
+    "bodyCreateOC": {
+        "_description": "GUIA-CED-OC-Description",
+        "_id_description": "The new online course's ID. If not supplied one will be created.",
+        "_id_required": false,
+        "id": "",
+        "_name_description": "Course title.",
+        "_name_required": true,
+        "_name_maxLength": "450",
+        "_name_minLength": "0",
+        "name": "GUIA-CED-OC-",
+        "_description_description": "Description",
+        "_description_required": false,
+        "_description_maxLength": "1822513",
+        "_description_minLength": "0",
+        "description": "",
+        "_languageCode_description": "The [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) Alpha-2 language code of the course.\n            \nWith the exception that Simplified Chinese is 'zh' and Traditional Chinese is 'zh-Hant'.",
+        "_languageCode_required": false,
+        "_languageCode_maxLength": "7",
+        "_languageCode_minLength": "0",
+        "languageCode": ""
+    },
+    "bodyCreateCompetencyCategory": {
+        "_description": "Request to create a new competency category.",
+        "_id_description": "The new competency category's ID. If not supplied one will be created.",
+        "_id_required": false,
+        "id": "",
+        "_name_description": "The name of the competency category.",
+        "_name_required": true,
+        "_name_maxLength": "255",
+        "_name_minLength": "0",
+        "name": "Competency Category 2",
+        "_parentId_description": "The ID of the parent competency category.",
+        "_parentId_required": false,
+        "parentId": "",
+        "_description_description": "The description of the competency category.",
+        "_description_required": false,
+        "_description_maxLength": "4000",
+        "_description_minLength": "0",
+        "description": ""
+    },
+    "bodyUpdateCompetencyCategory": {
+        "_description": "Request to update a Competency Category.",
+        "_name_description": "The name of the competency category",
+        "_name_required": true,
+        "_name_maxLength": "255",
+        "_name_minLength": "0",
+        "name": "Competency Category 1",
+        "_parentId_description": "The ID of the parent competency category.",
+        "_parentId_required": false,
+        "parentId": "",
+        "_description_description": "The description of the competency category",
+        "_description_required": false,
+        "_description_maxLength": "4000",
+        "_description_minLength": "0",
+        "description": ""
+    },
+    "bodyCreateCompetencyDefinition": {
+        "name": "API Competency",
+        "description": "",
+        "hasBadge": false,
+        "leaderboardPoints": 0
+    },
+    "bodyCreateWorkspace": {
+        "name": "GUIAuto - Workspace - 01"
+    },
+    "bodyUpdateWorkspace": {
+        "name": "GUIAuto - Workspace - 02"
+    }
+}

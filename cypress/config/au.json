@@ -1,0 +1,26 @@
+  {
+    "baseUrl": "https://guianasa.myabsorb.com.au/",
+    "experimentalStudio": true,
+    
+    "defaultCommandTimeout": 15000,
+    "requestTimeout": 10000,
+    "env": {
+      "environment": "au",
+      "api_Key": "RBlct1hcml9pnQY3CXYZUQw7_xF1LNe0",
+      "client_ID": "44ce6a44-4766-492a-b9f7-dc9a057b1b4d",
+      "topDEPT_ID": "970a27c0-0ddd-44f7-89b4-05570b58a6c9",
+      "COURSE_ILC_02_ADMIN_APPROVAL_ID": "3cbaeccb-dc6f-4d14-8f03-5ae1aafcb30c",
+      "COURSE_CURR_02_ADMIN_APPROVAL_ID": "f9d156eb-0441-4043-bc52-d1afcac06f07",
+      "COURSE_OC_02_ADMIN_APPROVAL_ID": "d91aae21-6958-47fd-bd73-0a8328671a13"
+    },
+    "retries": {
+      "runMode": 1,
+      "openMode": 1
+    },
+    "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

@@ -1,0 +1,10 @@
+UserLookup,CourseLookup,Lesson/Session,Status,DateStarted,DateCompleted
+QA10_Test01,QA10_TestOnlineCourse01,QA10_ObjectLesson01,3,1/1/2023,1/1/2023
+QA10_Test01,QA10_TestOnlineCourse01,QA10_VideoLesson01,3,1/1/2023,1/1/2023
+QA10_Test01,QA10_TestILC01,QA10_TestSession01,3,1/1/2023,1/1/2023
+QA10_Test02,QA10_TestOnlineCourse01,QA10_ObjectLesson01,3,1/1/2023,1/1/2023
+QA10_Test02,QA10_TestOnlineCourse01,QA10_VideoLesson01,3,1/1/2023,1/1/2023
+QA10_Test02,QA10_TestILC01,QA10_TestSession01,3,1/1/2023,1/1/2023
+QA10_Test03,QA10_TestOnlineCourse01,QA10_ObjectLesson01,3,1/1/2023,1/1/2023
+QA10_Test03,QA10_TestOnlineCourse01,QA10_VideoLesson01,3,1/1/2023,1/1/2023
+QA10_Test03,QA10_TestILC01,QA10_TestSession01,3,1/1/2023,1/1/2023

@@ -1,0 +1,1069 @@
+{
+  "ContactEmailAddresses": [],
+  "ExpressionGroups": [
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "Users1",
+          "ColumnName": "DateAdded",
+          "PropertyType": 3,
+          "Operator": 26
+        }
+      ]
+    }
+  ],
+  "TableConnections": [
+    {
+      "Columns": [
+        {
+          "Name": "Verb",
+          "Alias": "Verb",
+          "Order": 0,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Url",
+          "Alias": "Url",
+          "Order": 3,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Noun",
+          "Alias": "Noun",
+          "Order": 1,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "NounType",
+          "Alias": "NounType",
+          "Order": 2,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.Activities_dbo.Users_UserId",
+      "TableSchema": "dbo",
+      "TableName": "Activities",
+      "AliasedTableName": "Activities2",
+      "Order": 1,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 2,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "TimeSpentTicks",
+          "Alias": "TimeSpentTicks",
+          "Order": 7,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Score",
+          "Alias": "Score",
+          "Order": 6,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Progress",
+          "Alias": "Progress",
+          "Order": 5,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Status",
+          "Alias": "Status",
+          "Order": 4,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.ActivityEnrollments_dbo.Users_UserId",
+      "TableSchema": "dbo",
+      "TableName": "ActivityEnrollments",
+      "AliasedTableName": "ActivityEnrollments1",
+      "Order": 3,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Progress",
+          "Alias": "CProgress",
+          "Order": 9,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Credits",
+          "Alias": "CCredits",
+          "Order": 11,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Status",
+          "Alias": "CStatus",
+          "Order": 8,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Score",
+          "Alias": "CScore",
+          "Order": 10,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.CourseEnrollments_dbo.Users_UserId",
+      "TableSchema": "dbo",
+      "TableName": "CourseEnrollments",
+      "AliasedTableName": "CourseEnrollments1",
+      "Order": 5,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 4,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "CustomFields_Decimal3",
+          "Alias": "CustomFields_Decimal3",
+          "Order": 46,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String7",
+          "Alias": "CustomFields_String7",
+          "Order": 55,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String18",
+          "Alias": "CustomFields_String18",
+          "Order": 66,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "IsInstructor",
+          "Alias": "IsInstructor",
+          "Order": 37,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Bool3",
+          "Alias": "CustomFields_Bool3",
+          "Order": 86,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String12",
+          "Alias": "CustomFields_String12",
+          "Order": 60,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String14",
+          "Alias": "CustomFields_String14",
+          "Order": 62,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Gender",
+          "Alias": "Gender",
+          "Order": 17,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "PostalCode",
+          "Alias": "PostalCode",
+          "Order": 22,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateAdded",
+          "Alias": "DateAdded",
+          "Order": 90,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String9",
+          "Alias": "CustomFields_String9",
+          "Order": 57,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "MiddleName",
+          "Alias": "MiddleName",
+          "Order": 14,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String6",
+          "Alias": "CustomFields_String6",
+          "Order": 54,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "FullName",
+          "Alias": "FullName",
+          "Order": 16,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String22",
+          "Alias": "CustomFields_String22",
+          "Order": 70,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String13",
+          "Alias": "CustomFields_String13",
+          "Order": 61,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String1",
+          "Alias": "CustomFields_String1",
+          "Order": 49,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "ReferenceNumber",
+          "Alias": "ReferenceNumber",
+          "Order": 38,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "LastName",
+          "Alias": "LastName",
+          "Order": 15,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String25",
+          "Alias": "CustomFields_String25",
+          "Order": 73,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String19",
+          "Alias": "CustomFields_String19",
+          "Order": 67,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String3",
+          "Alias": "CustomFields_String3",
+          "Order": 51,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "City",
+          "Alias": "City",
+          "Order": 20,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "ProvinceId",
+          "Alias": "ProvinceId",
+          "Order": 21,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String8",
+          "Alias": "CustomFields_String8",
+          "Order": 56,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Username",
+          "Alias": "Username",
+          "Order": 12,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Location",
+          "Alias": "Location",
+          "Order": 26,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_DateTime3",
+          "Alias": "CustomFields_DateTime3",
+          "Order": 81,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "EmailAddress",
+          "Alias": "EmailAddress",
+          "Order": 41,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String10",
+          "Alias": "CustomFields_String10",
+          "Order": 58,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_DateTime5",
+          "Alias": "CustomFields_DateTime5",
+          "Order": 83,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String4",
+          "Alias": "CustomFields_String4",
+          "Order": 52,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Address2",
+          "Alias": "Address2",
+          "Order": 19,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_DateTime4",
+          "Alias": "CustomFields_DateTime4",
+          "Order": 82,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String28",
+          "Alias": "CustomFields_String28",
+          "Order": 76,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String20",
+          "Alias": "CustomFields_String20",
+          "Order": 68,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String29",
+          "Alias": "CustomFields_String29",
+          "Order": 77,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Bool5",
+          "Alias": "CustomFields_Bool5",
+          "Order": 88,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String17",
+          "Alias": "CustomFields_String17",
+          "Order": 65,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "IsAdmin",
+          "Alias": "IsAdmin",
+          "Order": 35,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "InactiveMessage",
+          "Alias": "InactiveMessage",
+          "Order": 28,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String24",
+          "Alias": "CustomFields_String24",
+          "Order": 72,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Bool2",
+          "Alias": "CustomFields_Bool2",
+          "Order": 85,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String15",
+          "Alias": "CustomFields_String15",
+          "Order": 63,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Notes",
+          "Alias": "Notes",
+          "Order": 39,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String2",
+          "Alias": "CustomFields_String2",
+          "Order": 50,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateHired",
+          "Alias": "DateHired",
+          "Order": 42,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Decimal5",
+          "Alias": "CustomFields_Decimal5",
+          "Order": 48,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String23",
+          "Alias": "CustomFields_String23",
+          "Order": 71,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String26",
+          "Alias": "CustomFields_String26",
+          "Order": 74,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String11",
+          "Alias": "CustomFields_String11",
+          "Order": 59,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "AddedBy",
+          "Alias": "AddedBy",
+          "Order": 91,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "EmployeeNumber",
+          "Alias": "EmployeeNumber",
+          "Order": 25,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "IsLearner",
+          "Alias": "IsLearner",
+          "Order": 36,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String16",
+          "Alias": "CustomFields_String16",
+          "Order": 64,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_DateTime1",
+          "Alias": "CustomFields_DateTime1",
+          "Order": 79,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "ActiveStatus",
+          "Alias": "ActiveStatus",
+          "Order": 33,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String27",
+          "Alias": "CustomFields_String27",
+          "Order": 75,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateEdited",
+          "Alias": "DateEdited",
+          "Order": 92,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Decimal2",
+          "Alias": "CustomFields_Decimal2",
+          "Order": 45,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String5",
+          "Alias": "CustomFields_String5",
+          "Order": 53,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Decimal4",
+          "Alias": "CustomFields_Decimal4",
+          "Order": 47,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Phone",
+          "Alias": "Phone",
+          "Order": 24,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Decimal1",
+          "Alias": "CustomFields_Decimal1",
+          "Order": 44,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "FirstName",
+          "Alias": "FirstName",
+          "Order": 13,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "JobTitle",
+          "Alias": "JobTitle",
+          "Order": 27,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateInactivated",
+          "Alias": "DateInactivated",
+          "Order": 34,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "AccountActivationToken",
+          "Alias": "AccountActivationToken",
+          "Order": 32,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Bool1",
+          "Alias": "CustomFields_Bool1",
+          "Order": 84,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_DateTime2",
+          "Alias": "CustomFields_DateTime2",
+          "Order": 80,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateTerminated",
+          "Alias": "DateTerminated",
+          "Order": 43,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String30",
+          "Alias": "CustomFields_String30",
+          "Order": 78,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Address",
+          "Alias": "Address",
+          "Order": 18,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_Bool4",
+          "Alias": "CustomFields_Bool4",
+          "Order": 87,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Avatar",
+          "Alias": "Avatar",
+          "Order": 89,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CountryId",
+          "Alias": "CountryId",
+          "Order": 23,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "PasswordResetToken",
+          "Alias": "PasswordResetToken",
+          "Order": 31,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "EditedBy",
+          "Alias": "EditedBy",
+          "Order": 93,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "ExternalId",
+          "Alias": "ExternalId",
+          "Order": 29,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "CustomFields_String21",
+          "Alias": "CustomFields_String21",
+          "Order": 69,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "AcceptedTermsAndConditions",
+          "Alias": "AcceptedTermsAndConditions",
+          "Order": 40,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Token",
+          "Alias": "Token",
+          "Order": 30,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 0,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    }
+  ],
+  "ClientId": "4b28d81f-d6e3-4dd2-821a-b16e8ddc674e",
+  "Name": "A BAD GUY",
+  "FileName": "data-2777-output",
+  "FileEncoding": 0,
+  "QuoteAllFields": false,
+  "Delimiter": ",",
+  "Description": null,
+  "JiraId": "DATA-2777",
+  "CronExpression": "15 16 * * *",
+  "TimeZoneId": "Eastern Standard Time",
+  "CommandTimeout": 120,
+  "FileType": 0,
+  "DateAdded": "2023-11-02T16:41:14.933",
+  "AddedBy": "qa.dms@absorblms.com",
+  "EditedBy": "qa.dms@absorblms.com",
+  "IsDeleted": false,
+  "DateDeleted": null,
+  "AppendTimestamp": false,
+  "FoldersDeleteHangfireJobId": null,
+  "AppendClientNameAndId": true,
+  "DeliveryMethod": 0,
+  "FtpProtocol": null,
+  "FtpUsername": null,
+  "FtpPassword": null,
+  "FtpServerUrl": null,
+  "FtpChangeDirectoryLocation": null,
+  "FtpPort": null,
+  "FtpOverwriteExistingFile": false,
+  "FtpTransferMode": null,
+  "FtpTextEncoding": null,
+  "FtpConnectionMode": null,
+  "InnerOrs": false,
+  "OverrideDateTimeFormat": null,
+  "ExportType": 0,
+  "DateEdited": "2023-11-09T21:00:01.85"
+}

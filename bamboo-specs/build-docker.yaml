@@ -1,0 +1,34 @@
+  key: JOB1
+  other:
+    clean-working-dir: true
+  tasks:
+  - checkout:
+      force-clean-build: 'false'
+      description: Checkout Default Repository
+  - script:
+      interpreter: BINSH_OR_CMDEXE
+      scripts:
+      - docker login -u ${bamboo.HubDockerComUser} -p ${bamboo.HubDockerComSecret}
+      description: Authenticate with Docker Hub
+  - any-task:
+      plugin-key: com.atlassian.bamboo.plugins.bamboo-docker-plugin:task.docker.cli
+      configuration:
+        commandOption: build
+        repository: absorbsoftware/absorb-cypress:latest
+        dockerfileOption: existing
+        nocache: 'false'
+        save: 'false'
+      description: Build Docker Image
+  - script:
+      interpreter: BINSH_OR_CMDEXE
+      scripts:
+      - |-
+        VERSION_BUILD=$(echo "${bamboo.planRepository.branchName}.${bamboo.buildNumber}" | sed -e 's/.*\///')
+        echo $VERSION_BUILD > version.txt
+        VERSION=$(echo "${bamboo.planRepository.branchName}" | sed -e 's/.*\///')
+        echo $VERSION >> version.txt
+        docker image tag absorbsoftware/absorb-cypress:latest absorbsoftware/absorb-cypress:$VERSION_BUILD
+        docker image tag absorbsoftware/absorb-cypress:latest absorbsoftware/absorb-cypress:$VERSION
+        docker image push --all-tags absorbsoftware/absorb-cypress
+      description: Push Image to Dockerhub
+  artifact-subscriptions: []

@@ -1,0 +1,3 @@
+ExternalId,CourseLookup,Name,Order,TypeName
+,QA10_TestOnlineCourse01,QA10_ObjectLesson01,0,ObjectLesson
+,QA10_TestOnlineCourse01,QA10_VideoLesson01,1,VideoLesson

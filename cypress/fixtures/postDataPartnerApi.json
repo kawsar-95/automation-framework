@@ -1,0 +1,219 @@
+{
+    "bodyCreateUser": {
+        "_description": "Request to create a new user.",
+        "_id_description": "The unique identifier to use for the new user. If not supplied one will be created.",
+        "_id_required": false,
+        "_departmentId_description": "The unique identifier of the department the user belongs to.",
+        "_departmentId_required": true,
+        "_departmentId_minLength": "1",
+        "departmentId": "{{departmentId}}",
+        "_username_description": "The username.",
+        "_username_required": true,
+        "_username_maxLength": "255",
+        "_username_minLength": "0",
+        "username": "Automation00",
+        "_firstName_description": "The first name.",
+        "_firstName_required": true,
+        "_firstName_maxLength": "255",
+        "_firstName_minLength": "0",
+        "firstName": "Automation",
+        "_middleName_description": "The middle name.",
+        "_middleName_required": false,
+        "_middleName_maxLength": "255",
+        "_middleName_minLength": "0",
+        "middleName": "L",
+        "_lastName_description": "The last name.",
+        "_lastName_required": true,
+        "_lastName_maxLength": "255",
+        "_lastName_minLength": "0",
+        "lastName": "00",
+        "_gender_description": "The gender.",
+        "_gender_required": false,
+        "_gender_values": "None,Male,Female",
+        "gender": "Female",
+        "_emailAddress_description": "The email address.",
+        "_emailAddress_required": false,
+        "_emailAddress_maxLength": "255",
+        "_emailAddress_minLength": "0",
+        "emailAddress": "Automation00@absorbx.com"
+    },
+    "bodyUpdateUser": {
+        "_description": null,
+        "_phoneNumber_description": "The user's phone number.",
+        "_phoneNumber_required": false,
+        "_phoneNumber_maxLength": "255",
+        "_phoneNumber_minLength": "0",
+        "phoneNumber": "",
+        "_address1_description": "The user's address.",
+        "_address1_required": false,
+        "_address1_maxLength": "255",
+        "_address1_minLength": "0",
+        "address1": "",
+        "_address2_description": "The user's alternate address.",
+        "_address2_required": false,
+        "_address2_maxLength": "255",
+        "_address2_minLength": "0",
+        "address2": "",
+        "_provinceCode_description": "The subdivision/province/state code in ISO 3166-2 format.",
+        "_provinceCode_required": false,
+        "_provinceCode_maxLength": "3",
+        "_provinceCode_minLength": "0",
+        "provinceCode": "",
+        "_countryCode_description": "The country code in ISO Alpha-2 format.",
+        "_countryCode_required": false,
+        "_countryCode_maxLength": "3",
+        "_countryCode_minLength": "0",
+        "countryCode": "",
+        "_city_description": "The user's city.",
+        "_city_required": false,
+        "_city_maxLength": "255",
+        "_city_minLength": "0",
+        "city": "",
+        "_postalCode_description": "The user's postal code.",
+        "_postalCode_required": false,
+        "_postalCode_maxLength": "255",
+        "_postalCode_minLength": "0",
+        "postalCode": ""
+    },
+    "bodyCustomFields": {
+        "_description": "The request to save one more custom field values for a user.",
+        "_customFields_description": "The collection of custom field values to save.",
+        "_customFields_required": true,
+        "customFields": [
+            {
+                "_description": null,
+                "_value_description": "The new value of the custom field.",
+                "_value_required": false,
+                "value": "A",
+                "_id_description": "The ID of the custom field.",
+                "_id_required": true,
+                "_id_minLength": "1",
+                "id": "6fa75b4c-951b-4ee7-9aa4-11fcf28b3ce0"
+            }
+        ]
+    },
+    "bodyCreateDepartment": {
+        "_description": "Request to create a single Department.",
+        "_Id_description": "The ID for the created department.",
+        "_Id_required": false,
+        "Id": "00000000-0000-0000-0000-000000000000",
+        "_Name_description": "Department name.",
+        "_Name_required": true,
+        "_Name_maxLength": "450",
+        "_Name_minLength": "1",
+        "Name": "",
+        "_UseDepartmentContactDetails_description": "If true, emails should use the department's contacts details.",
+        "_UseDepartmentContactDetails_required": true,
+        "UseDepartmentContactDetails": false,
+        "_CompanyName_description": "Department's company name.",
+        "_CompanyName_required": false,
+        "_CompanyName_maxLength": "4000",
+        "CompanyName": "",
+        "_PhoneNumber_description": "Department's phone number.",
+        "_PhoneNumber_required": false,
+        "_PhoneNumber_maxLength": "255",
+        "PhoneNumber": "",
+        "_EmailAddress_description": "Department's email address.",
+        "_EmailAddress_required": false,
+        "_EmailAddress_maxLength": "255",
+        "EmailAddress": "",
+        "_ExternalId_description": "ID from an external system indicating a department on their side is associated with this department.",
+        "_ExternalId_required": false,
+        "_ExternalId_maxLength": "255",
+        "ExternalId": "",
+        "_CurrencyId_description": "The ID for the currency associated with this department.\nThis will be used to determine what currency to use when displaying courses in the Course Catalog.\nIf not supplied, the currency associated with this Client's ecommerce settings will be used when displaying courses in the Course Catalog.",
+        "_CurrencyId_required": false,
+        "CurrencyId": "00000000-0000-0000-0000-000000000000",
+        "_PublicLearnerDashboardEnabled_description": "If true, the department offers a public dashboard to unauthenticated users. Otherwise, force them to login.",
+        "_PublicLearnerDashboardEnabled_required": true,
+        "PublicLearnerDashboardEnabled": false
+    },
+    "bodyUpdateDepartment": {
+        "Operations": [
+            {
+                "Operation": "add",
+                "FromPath": "string",
+                "ParsedFromPath": [
+                    {
+                        "Name": "string",
+                        "ComponentType": "string",
+                        "IsCollection": true
+                    }
+                ],
+                "Path": "string",
+                "ParsedPath": [
+                    {
+                        "Name": "string",
+                        "ComponentType": "string",
+                        "IsCollection": true
+                    }
+                ],
+                "Value": null
+            }
+        ],
+        "HasOperations": true
+    },
+    "bodyUpdateUserDetails": {
+        "notes": "No joy in mud vile mighty Cassy has struck out"
+    },
+    "bodyUpdateEmploymentDetails": {
+        "supervisorId": "87e7d175-4e78-4720-a997-e74f0f5728cd"
+    },
+    "bodyExternalIdentifiers1": {
+        "externalIdentifier": "09865dfa-9ebd-46cc-b617-41e98dbbcdd0"
+    },
+    "bodyExternalIdentifiers2": {
+        "_description": "Request to update an association between a department and an external system.",
+        "_externalIdentifier_description": "The ID of the external identifier.",
+        "_externalIdentifier_required": false,
+        "_externalIdentifier_maxLength": "255",
+        "_externalIdentifier_minLength": "0",
+        "externalIdentifier": ""
+    },
+    "bodyExternalIdentifiers3": {
+        "_description": "Request to update an association between a user and an external system.",
+        "_name_description": "The name of external identifier.",
+        "_name_required": true,
+        "_name_maxLength": "255",
+        "_name_minLength": "0",
+        "name": "",
+        "_id_description": "The ID of the external identifier.",
+        "_id_required": false,
+        "_id_maxLength": "255",
+        "_id_minLength": "0",
+        "id": ""
+    },
+    "bodyUserManagement": {
+        "userTypes": [
+            "Learner"
+        ],
+        "userManagementType": "None",
+        "managedGroupId": null,
+        "managedDepartments": [],
+        "createRoleId": null
+    },
+    "bodyUpdateProfile": {
+        "username": "Learner01",
+        "firstName": "Learner 01",
+        "middleName": "L",
+        "lastName": "Learner 01",
+        "emailAddress": null,
+        "departmentId": "09865dfa-9ebd-46cc-b617-41e98dbbcdd0",
+        "status": "Active"
+    },
+    "bodyUserRoles": {
+        "roleIds": [
+            "8a0396a9-000d-49a7-9cd4-35198d03ec53"
+        ]
+    },
+    "bodyCreateLog": {
+        "logs": [
+            {
+                "level": "Info",
+                "message": "Test Log message",
+                "code": "Test",
+                "innerException": "Test"
+            }
+        ]
+    }
+}

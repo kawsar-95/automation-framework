@@ -1,0 +1,93 @@
+import ARCollaborationAddEditPage from "../../../../../../../helpers/AR/pageObjects/Collaborations/ARCollaborationAddEditPage";
+import ARDashboardPage from "../../../../../../../helpers/AR/pageObjects/Dashboard/ARDashboardPage";
+import ARSelectModal from "../../../../../../../helpers/AR/pageObjects/Modals/ARSelectModal";
+import { collaborationDetails } from "../../../../../../../helpers/TestData/Collaborations/collaborationDetails";
+import { courses } from "../../../../../../../helpers/TestData/Courses/courses";
+import { ilcDetails } from "../../../../../../../helpers/TestData/Courses/ilc";
+import { users } from "../../../../../../../helpers/TestData/users/users";
+
+const resourceURL = ['http://midnet/ReportMgmt/ViewReport.asp?ReportID=45181', 'http://midnet/TrainingToolbox/PBProducts/', 'http://midnet/TrainingToolbox/PBPolicies/']
+const diffrnt3URL = ['https://oracle.com', 'https://absorblms.com', 'https://amazon.com']
+
+describe('C6522 MT-9576 || CLONE - AE - Privately Hosted URLs Are Invalid When Add As Course Resources.', function () {
+
+    beforeEach(() => {
+        //Sign into admin side as sys admin, navigate to Courses
+        cy.apiLoginWithSession(users.sysAdmin.admin_sys_01_username, users.sysAdmin.admin_sys_01_password, '/admin')
+        cy.get(ARDashboardPage.getElementByAriaLabelAttribute(ARDashboardPage.getARLeftMenuByLabel('Courses'))).click()
+        cy.wrap(ARDashboardPage.getMenuItemOptionByName('Courses'))
+        
+    })
+
+
+    it('Add an Online Course with the condition  => when add a resources with 3 URLs (Enter the 3 of the given URL).', () => {
+        cy.createCourse('Online Course')
+        //Create a Resource with Url Type Attachment
+        cy.get(ARCollaborationAddEditPage.getElementByTitleAttribute('Resources')).eq(0).click()
+        cy.get(ARCollaborationAddEditPage.getAddResourceBtn()).click()
+        for (let i = 0; i < resourceURL.length; i++) {
+            cy.get(ARDashboardPage.getElementByAriaLabelAttribute(ARCollaborationAddEditPage.getResourceByIndex(i + 1, i + 1))).within(() => {
+                cy.get(ARCollaborationAddEditPage.getResourceNameTxtF()).clear().clear().type(collaborationDetails.resourceTwo[0])
+                cy.get(ARCollaborationAddEditPage.getResourceDescriptionTxtF()).clear().type(collaborationDetails.resourceTwo[1])
+                //Add Url Type Attachment
+
+                cy.get(ARCollaborationAddEditPage.getAttachmentRadioBtn()).contains('Url').click()
+                cy.get(ARCollaborationAddEditPage.getUrlTxtF()).clear().type(resourceURL[i])
+            })
+            ARCollaborationAddEditPage.getMediumWait()
+            cy.get(ARCollaborationAddEditPage.getAddResourcesBtn()).should('contain.text', 'Add Resource').click()
+            ARCollaborationAddEditPage.getMediumWait()
+
+            //Wait for Save Btn to become enabled
+            cy.get(ARCollaborationAddEditPage.getElementByDataNameAttribute('submit')).click()
+
+        }
+    })
+
+    it('Add an Instructor Led Course with the condition  => when add a resources with 2 URLs (Enter the 3 of the given URL) and 1 different URL', () => {
+        cy.createCourse('Instructor Led', ilcDetails.courseName, false)
+        //Create a Resource with Url Type Attachment
+        cy.get(ARCollaborationAddEditPage.getElementByTitleAttribute('Resources')).eq(0).click()
+        cy.get(ARCollaborationAddEditPage.getAddResourceBtn()).click()
+        for (let i = 0; i < resourceURL.length; i++) {
+            cy.get(ARCollaborationAddEditPage.getElementByTitleAttribute('Resources')).eq(0).click()
+            cy.get(ARDashboardPage.getElementByAriaLabelAttribute(ARCollaborationAddEditPage.getResourceByIndex(i + 1, i + 1))).within(() => {
+                cy.get(ARCollaborationAddEditPage.getResourceNameTxtF()).clear().clear().type(collaborationDetails.resourceTwo[0])
+                cy.get(ARCollaborationAddEditPage.getResourceDescriptionTxtF()).clear().type(collaborationDetails.resourceTwo[1])
+                //Add Url Type Attachment
+
+                cy.get(ARCollaborationAddEditPage.getAttachmentRadioBtn()).contains('Url').click()
+                cy.get(ARCollaborationAddEditPage.getUrlTxtF()).clear().type(resourceURL[i])
+            })
+            ARCollaborationAddEditPage.getVShortWait()
+            cy.get(ARCollaborationAddEditPage.getAddResourcesBtn()).should('contain.text', 'Add Resource').click()
+        }
+        cy.get(ARCollaborationAddEditPage.getElementByDataNameAttribute('submit')).click()
+
+    })
+
+    it('Add a Curriculum with the condition  => when add a resources with 2 URLs (Enter the 3 of the given URL)', () => {
+        cy.createCourse('Curriculum')
+
+        ARSelectModal.SearchAndSelectFunction([courses.oc_filter_01_name])
+        //Create a Resource with Url Type Attachment
+        cy.get(ARCollaborationAddEditPage.getElementByTitleAttribute('Resources')).eq(0).click()
+        cy.get(ARCollaborationAddEditPage.getAddResourceBtn()).click()
+        for (let i = 0; i < diffrnt3URL.length; i++) {
+            cy.get(ARDashboardPage.getElementByAriaLabelAttribute(ARCollaborationAddEditPage.getResourceByIndex(i + 1, i + 1))).within(() => {
+                cy.get(ARCollaborationAddEditPage.getResourceNameTxtF()).clear().type(collaborationDetails.resourceTwo[0])
+                cy.get(ARCollaborationAddEditPage.getResourceDescriptionTxtF()).clear().type(collaborationDetails.resourceTwo[1])
+                //Add Url Type Attachment
+
+                cy.get(ARCollaborationAddEditPage.getAttachmentRadioBtn()).contains('Url').click()
+                cy.get(ARCollaborationAddEditPage.getUrlTxtF()).clear().type(diffrnt3URL[i])
+            })
+            ARCollaborationAddEditPage.getMediumWait()
+            cy.get(ARCollaborationAddEditPage.getAddResourcesBtn()).should('contain.text', 'Add Resource').click()
+            //Wait for Save Btn to become enabled
+            cy.get(ARCollaborationAddEditPage.getElementByDataNameAttribute('submit')).click()
+
+        }
+    })
+
+})

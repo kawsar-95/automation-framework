@@ -1,0 +1,166 @@
+{
+  "ContactEmailAddresses": [],
+  "ExpressionGroups": [
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "Users1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    }
+  ],
+  "TableConnections": [
+    {
+      "Columns": [
+        {
+          "Name": "Username",
+          "Alias": "Username",
+          "Order": 2,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "LastName",
+          "Alias": "LastName",
+          "Order": 1,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "FirstName",
+          "Alias": "FirstName",
+          "Order": 0,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 0,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [],
+      "Name": "FK_manager.xUserRoles_dbo.Users_User_Id",
+      "TableSchema": "manager",
+      "TableName": "xUserRoles",
+      "AliasedTableName": "xUserRoles1",
+      "Order": 3,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [],
+      "Name": "FK_manager.xManagerLearners_dbo.Users_ManagerId",
+      "TableSchema": "manager",
+      "TableName": "xManagerLearners",
+      "AliasedTableName": "xManagerLearners1",
+      "Order": 1,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Username",
+          "Alias": "ManagerUsername",
+          "Order": 3,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_manager.xManagerLearners_dbo.Users_LearnerId",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users2",
+      "Order": 2,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Name",
+          "Alias": "ManagerRole",
+          "Order": 4,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_manager.xUserRoles_manager.Roles_ManagerRole_Id",
+      "TableSchema": "manager",
+      "TableName": "Roles",
+      "AliasedTableName": "Roles1",
+      "Order": 4,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    }
+  ],
+  "ClientId": "4b28d81f-d6e3-4dd2-821a-b16e8ddc674e",
+  "Name": "Manager report_Test Automation",
+  "FileName": "ManagerTestAutomation",
+  "FileEncoding": 0,
+  "QuoteAllFields": false,
+  "Delimiter": ",",
+  "Description": null,
+  "JiraId": "DATA-2487",
+  "CronExpression": null,
+  "TimeZoneId": null,
+  "CommandTimeout": 60,
+  "FileType": 0,
+  "DateAdded": "2023-06-20T14:23:46.207",
+  "DateEdited": "2023-06-20T14:25:01.9",
+  "AddedBy": "qa.dms@absorblms.com",
+  "EditedBy": "qa.dms@absorblms.com",
+  "IsDeleted": false,
+  "DateDeleted": null,
+  "AppendTimestamp": false,
+  "FoldersDeleteHangfireJobId": null,
+  "AppendClientNameAndId": true,
+  "DeliveryMethod": 0,
+  "FtpProtocol": null,
+  "FtpUsername": null,
+  "FtpPassword": null,
+  "FtpServerUrl": null,
+  "FtpChangeDirectoryLocation": null,
+  "FtpPort": null,
+  "FtpOverwriteExistingFile": false,
+  "FtpTransferMode": null,
+  "FtpTextEncoding": null,
+  "FtpConnectionMode": null,
+  "InnerOrs": false,
+  "OverrideDateTimeFormat": null,
+  "ExportType": 0
+}

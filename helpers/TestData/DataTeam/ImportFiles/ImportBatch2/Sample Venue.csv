@@ -1,0 +1,3 @@
+Name,ExternalId,VenueType,Details,MaxClassSize,Address,City,Province,PostalCode,Country,Url,PhoneNumber,Username,Password,DepartmentLookup
+QA10_TestVenue1,,0,,50,,,,,,,,,,
+QA10_TestVenue2,,0,,100,,,,,,,,,,

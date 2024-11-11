@@ -1,0 +1,4 @@
+Name,ExternalId,TypeName,ActiveStatus,CourseLookup,Tag
+QA10_TestOnlineCourse01,,OnlineCourse,0,,Test
+QA10_TestILC01,,InstructorLedCourse,0,,Test
+QA10_TestCurriculum01,,Curriculum,0,QA10_TestOnlineCourse01,Test

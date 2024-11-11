@@ -1,0 +1,2051 @@
+---
+version: 2
+variables:
+  test: test
+plan:
+  project-key: QDC
+  key: DOCK
+  name: Build Cypress docker image
+stages:
+- Docker Stage:
+    description: Build the docker container and push to docker hub.
+    manual: false
+    final: false
+    jobs:
+    - Build docker container
+Build docker container: !include build-docker.yaml
+repositories:
+- Absorb.E2E_Docker:
+    scope: global
+triggers:
+- polling:
+    period: '10'
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test: test
+plan:
+  project-key: QR
+  key: DOCK
+  name: Build Cypress docker image
+stages:
+- Docker Stage:
+    description: Build the docker container and push to docker hub.
+    manual: false
+    final: false
+    jobs:
+    - Build docker container
+Build docker container: !include build-docker.yaml
+repositories:
+- Absorb.E2E_Docker:
+    scope: global
+triggers:
+- polling:
+    period: '10'
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:apiV15
+plan:
+  project-key: QDC
+  key: APIV15
+  name: Test API V15
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 16 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:apiV1
+plan:
+  project-key: QDC
+  key: APIV1
+  name: Test API V1
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 18 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'  
+ ---
+version: 2
+variables:
+  test-value: cypress:run:apiPartnerV2
+plan:
+  project-key: QDC
+  key: APIPARTNERV2
+  name: Test API PARTNERV2
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 16 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LECoreRegCatOne:docker
+plan:
+  project-key: QR
+  key: LECOREREGCATONE
+  name: Test Core Regression LE Category One
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 17 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARCoreRegCatOne:docker
+plan:
+  project-key: QR
+  key: ARCOREREGCATONE
+  name: Test Core Regression AR Category One
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 17 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARCoreRegCatOne:docker --browser chrome
+plan:
+  project-key: QDC
+  key: ARCOREREGCATONE
+  name: Test Core Regression AR Category One
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 17 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:smokeProdAU:docker --browser chrome
+plan:
+  project-key: QDC
+  key: SMOKEAU
+  name: Test Smoke Prod AU
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 17 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:smokeProdEU:docker --browser chrome
+plan:
+  project-key: QDC
+  key: SMOKEEU
+  name: Test Smoke Prod EU
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 18 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:smokeProdCom:docker --browser chrome
+plan:
+  project-key: QDC
+  key: SMOKECOM
+  name: Test Smoke Prod COM
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 18 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:smokeProdCA:docker --browser chrome
+plan:
+  project-key: QDC
+  key: SMOKECA
+  name: Test Smoke Prod CA
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 19 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: smokeProd:qamain
+plan:
+  project-key: QDC
+  key: SMOKEQAMAIN
+  name: Test Smoke QAMAIN
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 19 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'  
+---
+version: 2
+variables:
+  test-value: cypress:regressAR:chrome:QA2
+plan:
+  project-key: QDC
+  key: REGRESSARQA2
+  name: Test Reg AR QA2 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 19 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:regressLE:chrome:QA2
+plan:
+  project-key: QDC
+  key: REGRESSLEQA2
+  name: Test Reg LE QA2 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 20 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:regressAR:chrome:docker
+plan:
+  project-key: QDC
+  key: REGRESSAR
+  name: Test Reg AE Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 20 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatone
+plan:
+  project-key: QDC
+  key: REGRESSARCATONE
+  name: Test Reg AR Chrome Categoryone
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 21 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecattwo
+plan:
+  project-key: QDC
+  key: REGRESSARCATTWO
+  name: Test Reg AR Chrome Categorytwo
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 21 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatthree
+plan:
+  project-key: QDC
+  key: REGRESSARCATTHREE
+  name: Test Reg AR Chrome Categorythree
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 22 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatfour
+plan:
+  project-key: QDC
+  key: REGRESSARCATFOUR
+  name: Test Reg AR Chrome Categoryfour
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 22 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecatone
+plan:
+  project-key: QDC
+  key: REGRESSLECATONE
+  name: Test Reg LE chrome Categoryone
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 23 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecattwo
+plan:
+  project-key: QDC
+  key: REGRESSLECATTWO
+  name: Test Reg LE chrome CategoryTwo
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 23 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecatthree
+plan:
+  project-key: QDC
+  key: REGRESSLECATTHREE
+  name: Test Reg LE chrome CategoryThree
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 30 07 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'  
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecatfour
+plan:
+  project-key: QDC
+  key: REGRESSLECATFOUR
+  name: Test Reg LE chrome CategoryFour
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 45 06 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'  
+---
+version: 2
+variables:
+  test-value: smokeProd:qa2
+plan:
+  project-key: QDC
+  key: SMOKEPRODQA2GC
+  name: Test Smoke Prod QA2 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 15 07 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: smokeProd:aut1
+plan:
+  project-key: QDC
+  key: AUT1SMOKE
+  name: Tests Smoke AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 06 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: smokeProd:aut2
+plan:
+  project-key: QDC
+  key: AUT2SMOKE
+  name: Tests Smoke AUT2 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 05 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: smokeProd:aut3
+plan:
+  project-key: QDC
+  key: AUT3SMOKE
+  name: Tests Smoke AUT3 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 04 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecatoneAUT1
+plan:
+  project-key: QDC
+  key: AUT1LECATONE
+  name: Tests Reg LE CatONE AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 02 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatoneAUT1
+plan:
+  project-key: QDC
+  key: AUT1ARCATONE
+  name: Tests Reg AR CatONE AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 04 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecattwoAUT1
+plan:
+  project-key: QDC
+  key: AUT1LECATTWO
+  name: Tests Reg LE CatTWO AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 01 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecatthreeAUT1
+plan:
+  project-key: QDC
+  key: AUT1LECATTHREE
+  name: Tests Reg LE CatTHREE AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 01 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:LEregsuitecatfourAUT1
+plan:
+  project-key: QDC
+  key: AUT1LECATFOUR
+  name: Tests Reg LE CatFOUR AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 01 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1' 
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecattwoAUT1
+plan:
+  project-key: QDC
+  key: AUT1ARCATTWO
+  name: Tests Reg AR CatTWO AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 22 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatthreeAUT1
+plan:
+  project-key: QDC
+  key: AUT1ARCATTHREE
+  name: Tests Reg AR CatTHREE AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 22 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatfourAUT1
+plan:
+  project-key: QDC
+  key: AUT1ARCATFOUR
+  name: Tests Reg AR CatFOUR AUT1 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 22 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:ARregsuitecatoneAUT3
+plan:
+  project-key: QDC
+  key: AUT3ARCATONE
+  name: Tests Reg AR CatONE AUT3 Chrome
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 04 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+variables:
+  test-value: cypress:run:secureCDN
+plan:
+  project-key: QDC
+  key: QAMAINCDN
+  name: Tests CDN QA-Main
+stages:
+- Docker Stage:
+    description: Run the cypress test containers.
+    manual: false
+    final: false
+    jobs:
+    - Run cypress tests
+Run cypress tests: !include run-tests.yaml
+
+repositories:
+- Absorb.E2E_Tests:
+    scope: global
+triggers:
+  - polling:
+      cron: 0 00 04 * * ? * MON-FRI
+branches:
+  create: for-new-branch
+  delete:
+    after-deleted-days: 7
+    after-inactive-days: 90
+  link-to-jira: true
+notifications:
+- events:
+  - job-failed
+  recipients:
+  - committers
+- events:
+  - job-hung
+  recipients:
+  - committers
+- events:
+  - plan-completed
+  recipients:
+  - watchers
+- events:
+  - plan-failed
+  recipients:
+  - committers
+labels: []
+other:
+  concurrent-build-plugin: '1'
+---
+version: 2
+plan:
+  key: QDC-DOCK
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QR-DOCK
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QR-ARCOREREGCATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-ARCOREREGCATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-APIV15
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-APIV1
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-SMOKEQAMAIN
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-SMOKEEU
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-APIPARTNERV2
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-SMOKEAU
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-SMOKECOM
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-SMOKECA
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSLEQA2
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSARQA2
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QR-LECOREREGCATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSAR
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSARCATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSARCATTWO
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSLECATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSLECATTWO
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSLECATTHREE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSLECATFOUR
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSARCATTHREE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-REGRESSARCATFOUR
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-SMOKEPRODQA2GC
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1SMOKE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT2SMOKE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT3SMOKE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1LECATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1ARCATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1ARCATTHREE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1ARCATFOUR
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1LECATTWO
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1LECATTHREE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1LECATFOUR
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT1ARCATTWO
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-AUT3ARCATONE
+plan-permissions: !include permissions.yaml
+---
+version: 2
+plan:
+  key: QDC-QAMAINCDN
+plan-permissions: !include permissions.yaml
+...

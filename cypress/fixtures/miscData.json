@@ -1,0 +1,86 @@
+{
+    "RESOURCE_IMAGE_FOLDER_PATH": "../../helpers/TestData/resources/images/",
+    "RESOURCE_PDF_FOLDER_PATH": "../../helpers/TestData/resources/pdfs/",
+    "RESOURCE_VIDEO_FOLDER_PATH": "../../helpers/TestData/resources/videos/",
+
+    "COURSE_THUMBNAIL": "courseThumbnail.jpg",
+
+    "OBJECT_01_FILENAME" : "ObjectLessonUploadImage1.jpg",
+    "BILLBOARD_01_FILENAME": "billboard (tasty).jpg",
+    "BILLBOARD_01_UPLOADTESTFILENAME" : "BillBoardUploadImage1.jpg",
+    "SWITCHING_TO_ABSORB_IMG_URL": "https://www.absorblms.com/uploads/wp-content/uploads/2018/10/switching-to-absorb.jpg",
+    "SWITCHING_TO_ABSORB_FILENAME": "switching-to-absorb.jpg",
+
+    "RESOURCE_GLOBAL_01": "GUIAuto-Global Resources",
+
+
+    "POLL_01_TITLE" : "One Poll Two Poll Red Poll", 
+    "POLL_02_TITLE" : "Where is the North Pole?",
+
+    "FAQ_01_TITLE" : "FAQ U",
+    "FAQ_02_TITLE" : "FAQ U 2",
+    "FAQ_03_TITLE" : "What the FAQ?",
+
+    "NEWS_ART_01_TITLE" : "GUIA NEWS ART 01 (DO NOT DELETE)",
+    "NEWS_ART_01_DESC" : "GUIA NEWS ART 01 (DO NOT DELETE)",
+
+    "NEWS_ART_02_TITLE" : "GUIA NEWS ART 02 (DO NOT DELETE)", 
+    "NEWS_ART_02_DESC" : "GUIA NEWS ART 02 (DO NOT DELETE)",
+
+    "NEWS_ART_03_TITLE": "Orange Shirt Day",
+    "NEWS_ART_03_DESC": "Orange Shirt Day",
+
+    "NEWS_ART_04_TITLE" : "GUIA NEWS ART 03 (DO NOT DELETE)", 
+    "NEWS_ART_04_DESC" : "GUIA NEWS ART 03 (DO NOT DELETE)",
+
+    "AUTO_TAG1" : "Auto_Tag1",
+
+    "REMOTE_VIDEO_URL": "https://www.youtube.com/embed/J1rK_B4FUFE",
+    "REMOTE_IMAGE_URL": "https://waytocanada.ca/uploads/1648185654_places.jpg",
+    "BillBOARD_01_MP4NAME": "sintel-short.mp4",
+    "BillBOARD_01_WEBMNAME": "sintel-short.webm",
+    "BillBOARD_01_UPLOADTESTMP4NAME": "BillboardUploadMp4.mp4",
+    "BillBOARD_01_UPLOADTESTWEBMNAME": "BillboardUploadWEBM.webm",
+
+
+    
+    "COMPETENCY_01": "GUIAuto - Competency - 01",
+    "COMPETENCY_02": "GUIAuto - Competency - 02",
+    "COMPETENCY_03": "GUIAuto - Competency - 03",
+
+    "FIELD_REQUIRED_ERROR": "Field is required.", 
+    "INVALID_CHARS_ERROR": "Field contains invalid characters.", 
+    "WHITESPACE_CHARS_ERROR": "Must not contain only whitespace characters",
+    "NEGATIVE_CHARS_ERROR": "Field must be greater than or equal to 0.", 
+    "CHAR_255_ERROR": "Field cannot be more than 255 characters.",
+    "CHAR_450_ERROR": "Field cannot be more than 450 characters.",
+    "CHAR_455_ERROR": "Field cannot be more than 455 characters.",
+    "CHAR_850_ERROR": "Field cannot be more than 850 characters.",
+    "CHAR_4000_ERROR": "Field cannot be more than 4000 characters.",
+
+    "A_COLLABORATION_NAME": "A - GUIA Collaboration",
+    "A_COLLABORATION_DESCRIPTION": "This is the description for the A - GUIA Collaboration.",
+    "B_COLLABORATION_NAME": "B - GUIA Collaboration",
+    "C_COLLABORATION_NAME": "C - GUIA Collaboration",
+    "D_COLLABORATION_NAME": "D - GUIA Collaboration",
+    "E_COLLABORATION_NAME": "E - GUIA Collaboration",
+    "F_COLLABORATION_NAME": "F - GUIA Collaboration",
+    "G_COLLABORATION_NAME": "G - GUIA Collaboration",
+    "H_COLLABORATION_NAME": "H - GUIA Collaboration",
+    "I_COLLABORATION_NAME": "I - GUIA Collaboration",
+    "J_COLLABORATION_NAME": "J - GUIA Collaboration",
+    "K_COLLABORATION_NAME": "K - GUIA Collaboration",
+    "L_COLLABORATION_NAME": "L - GUIA Collaboration",
+
+    "GUIA_CREDIT_1_NAME": "GUIA-CREDIT-1",
+    "GUIA_CREDIT_2_NAME": "GUIA-CREDIT-2",
+
+    "PASSWORD_DO_NOT_MATCH": "Passwords do not match",
+    "INVALID_PASSWORD_ERROR": "Password must contain at least: 1 letter, 1 number and be at least 8 characters in length",
+    "ENTER_VALID_EMAIL" : "Please enter a valid e-mail address.",
+    "DUPLICATE_USERNAME": "Username '{0}' already exists.",
+
+    "PORTAL_SUCCESS_COLOR": "rgb(140, 197, 85)",
+    "PORTAL_BASE_COLOR": "rgb(179, 179, 179)",
+    "PORTAL_PRIMARY_COLOR": "rgb(57, 157, 221)"
+}

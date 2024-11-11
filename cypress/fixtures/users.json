@@ -1,0 +1,243 @@
+{
+    "blatAdmin": {
+        "ADMIN_BLAT_01_USERNAME": "GUIAutoBA01",
+        "ADMIN_BLAT_01_PASSWORD": "QA@ut0m@t!0n",
+        "ADMIN_BLAT_01_FNAME": "GUI_Auto",
+        "ADMIN_BLAT_01_LNAME": "Blat_Admin_01",
+        "ADMIN_BLAT_01_EMAIL": "qa.guiauto1@absorblms.com"
+    },    
+    "sysAdmin": {
+        "ADMIN_SYS_01_USERNAME": "GUIAutoSA01",
+        "ADMIN_SYS_01_PASSWORD": "testing1",
+        "ADMIN_SYS_01_FNAME": "GUI_Auto",
+        "ADMIN_SYS_01_LNAME": "Sys_Admin_01",
+        "ADMIN_SYS_01_EMAIL": "qa.guiauto1@absorblms.com"
+    },
+    "sysAdmin2": {
+        "ADMIN_SYS_01_USERNAME": "GUIAutoSA02",
+        "ADMIN_SYS_01_PASSWORD": "testing1",
+        "ADMIN_SYS_01_FNAME": "GUI_Auto",
+        "ADMIN_SYS_01_LNAME": "Sys_Admin_02",
+        "ADMIN_SYS_01_EMAIL": "qa.guiauto1@absorblms.com"
+    },
+    "adminLogInOut": {
+        "ADMIN_LOGINOUT_USERNAME": "GUIAuto Admin LogInOut",
+        "ADMIN_LOGINOUT_PASSWORD": "testing1",
+        "ADMIN_LOGINOUT_FNAME": "GUI_Auto",
+        "ADMIN_LOGINOUT_LNAME": "Admin LogInOut",
+        "ADMIN_LOGINOUT_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_LOGINOUT_ROLES": "Admin"
+    },
+    "sysAdminLogInOut": {
+        "ADMIN_SYS_LOGINOUT_USERNAME": "GUIAuto SysAdmin LogInOut",
+        "ADMIN_SYS_LOGINOUT_PASSWORD": "testing1",
+        "ADMIN_SYS_LOGINOUT_FNAME": "GUI_Auto",
+        "ADMIN_SYS_LOGINOUT_LNAME": "SysAdmin LogInOut",
+        "ADMIN_SYS_LOGINOUT_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_SYS_LOGINOUT_ROLES": "System Admin"
+    },
+    "depAdminLogInOut": {
+        "ADMIN_DEP_LOGINOUT_USERNAME": "GUIAuto DepAdmin LogInOut",
+        "ADMIN_DEP_LOGINOUT_PASSWORD": "testing1",
+        "ADMIN_DEP_LOGINOUT_FNAME": "GUI_Auto",
+        "ADMIN_DEP_LOGINOUT_LNAME": "DepAdmin LogInOut",
+        "ADMIN_DEP_LOGINOUT_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_DEP_LOGINOUT_ROLES": "Admin"
+    },
+    "depAdminDEPTB": {
+        "ADMIN_DEP_USERNAME": "GUIAuto DepAdmin DEPTB",
+        "ADMIN_DEP_PASSWORD": "testing1",
+        "ADMIN_DEP_FNAME": "Admin-DEPTB",
+        "ADMIN_DEP_LNAME": "DepAdminIsOnly",
+        "ADMIN_DEP_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_DEP_ROLES": "Admin"
+    },
+    "depAdminDEPTC": {
+        "ADMIN_DEP_USERNAME": "GUIAuto DepAdmin DEPTC",
+        "ADMIN_DEP_PASSWORD": "testing1",
+        "ADMIN_DEP_FNAME": "Admin-DEPTC",
+        "ADMIN_DEP_LNAME": "DepAdminIsOnly",
+        "ADMIN_DEP_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_DEP_ROLES": "Admin"
+    },
+    "depAdminDEPTD": {
+        "ADMIN_DEP_USERNAME": "GUIAuto DepAdmin DEPTD",
+        "ADMIN_DEP_PASSWORD": "testing1",
+        "ADMIN_DEP_FNAME": "Admin-DEPTD",
+        "ADMIN_DEP_LNAME": "DepAdminIsOnly",
+        "ADMIN_DEP_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_DEP_ROLES": "Admin"
+    },
+    "depAdminSUBDEP": {
+        "ADMIN_DEP_USERNAME": "GUIAuto DepAdmin SUBDEP",
+        "ADMIN_DEP_PASSWORD": "testing1",
+        "ADMIN_DEP_FNAME": "Admin-SUBDEP",
+        "ADMIN_DEP_LNAME": "DepAdminSUBDEP",
+        "ADMIN_DEP_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_DEP_ROLES": "Admin"
+    },
+    "groupAdminLogInOut": {
+        "ADMIN_GROUP_LOGINOUT_USERNAME": "GUIAuto GroupAdmin LogInOut",
+        "ADMIN_GROUP_LOGINOUT_PASSWORD": "testing1",
+        "ADMIN_GROUP_LOGINOUT_FNAME": "GUI_Auto",
+        "ADMIN_GROUP_LOGINOUT_LNAME": "GroupAdmin LogInOut",
+        "ADMIN_GROUP_LOGINOUT_EMAIL": "qa.guiauto5@absorblms.com",
+        "ADMIN_GROUP_LOGINOUT_ROLES": "Reporter, Admin",
+        "ARR_STR_ADMIN_GROUP_LOGINOUT_ROLES": ["Reporter", "Admin"]
+    },
+    "instructorLogInOut": {
+        "INSTRUCTOR_LOGINOUT_USERNAME": "GUIAuto Instructor LogInOut",
+        "INSTRUCTOR_LOGINOUT_PASSWORD": "testing1",
+        "INSTRUCTOR_LOGINOUT_FNAME": "GUI_Auto",
+        "INSTRUCTOR_LOGINOUT_LNAME": "Instructor LogInOut",
+        "INSTRUCTOR_LOGINOUT_EMAIL": "qa.guiauto5@absorblms.com",
+        "INSTRUCTOR_LOGINOUT_ROLES": "Instructor"
+    },
+    "reviewer": {
+        "REVIEWER_USERNAME": "GUIAuto Reviewer",
+        "REVIEWER_PASSWORD": "testing1",
+        "REVIEWER_FNAME": "GUI_Auto",
+        "REVIEWER_LNAME": "Reviewer",
+        "REVIEWER_EMAIL": "qa.guiauto5@absorblms.com",
+        "REVIEWER_ROLES": "Reviewer"
+    },
+    "learnerLogInOut": {
+        "LEARNER_LOGINOUT_USERNAME": "GUIAuto Learner LogInOut",
+        "LEARNER_LOGINOUT_PASSWORD": "testing1",
+        "LEARNER_LOGINOUT_FNAME": "GUI_Auto",
+        "LEARNER_LOGINOUT_LNAME": "Learner LogInOut",
+        "LEARNER_LOGINOUT_EMAIL": "qa.guiauto5@absorblms.com"
+    },
+    "learner01": {
+        "LEARNER_01_USERNAME": "GUIAutoL01",
+        "LEARNER_01_PASSWORD": "testing1",
+        "LEARNER_01_FNAME": "GUIAutoL01",
+        "LEARNER_01_LNAME": "Learner_01",
+        "LEARNER_01_EMAIL": "qa.guiauto1@absorblms.com",
+        "LEARNER_01_CREDIT_SCORE": "0"
+    },
+    "learner02": {
+        "LEARNER_02_USERNAME": "GUIAutoL02",
+        "LEARNER_02_PASSWORD": "testing1",
+        "LEARNER_02_FNAME": "GUIAutoL02",
+        "LEARNER_02_LNAME": "Learner_02",
+        "LEARNER_02_EMAIL": "qa.guiauto1@absorblms.com"
+
+    },
+    "learner03": {
+        "LEARNER_03_USERNAME": "GUIAutoL03",
+        "LEARNER_03_PASSWORD": "testing1",
+        "LEARNER_03_PIN": "1111",
+        "LEARNER_03_FNAME": "GUI_Auto",
+        "LEARNER_03_LNAME": "Learner_03",
+        "LEARNER_03_EMAIL": "qa.guiauto1@absorblms.com"
+    },
+    "learner04": {
+        "LEARNER_04_USERNAME": "GUIAutoL04",
+        "LEARNER_04_PASSWORD": "testing1",
+        "LEARNER_04_FNAME": "GUI_Auto",
+        "LEARNER_04_LNAME": "Learner_04",
+        "LEARNER_04_EMAIL": "qa.guiauto1@absorblms.com"
+    },
+    "learner05": {
+        "LEARNER_05_USERNAME": "GUIAutoL05",
+        "LEARNER_05_PASSWORD": "testing1",
+        "LEARNER_05_FNAME": "GUI_Auto",
+        "LEARNER_05_LNAME": "Learner_05",
+        "LEARNER_05_EMAIL": "qa.guiauto1@absorblms.com"
+    },
+    "learner08": {
+        "LEARNER_08_USERNAME": "GUIAutoL08",
+        "LEARNER_08_PASSWORD": "testing1",
+        "LEARNER_08_FNAME": "GUI_Auto",
+        "LEARNER_08_LNAME": "Learner_08",
+        "LEARNER_08_EMAIL": "qa.guiauto1@absorblms.com"
+    },
+    "learnerTransCert": {
+        "LEARNER_TRANSCERT_USERNAME": "GUIAutoL TransCert",
+        "LEARNER_TRANSCERT_PASSWORD": "testing1",
+        "LEARNER_TRANSCERT_FNAME": "GUI_Auto_L",
+        "LEARNER_TRANSCERT_LNAME": "TransCert",
+        "LEARNER_TRANSCERT_EMAIL": "qa.guiauto4@absorblms.com"
+    },
+    "groups": {
+        "GUIA_GROUP_NAME": "GUIA_GROUP",
+        "REPORT_SHARING_GROUP_NAME": "GUIAuto Report Sharing Group"
+    },
+    "createSystemAdmin": {
+        "CREATE_SYSTEM_ADMIN_USERNAME": "rahim.bhaloo@absorblms.com",
+        "CREATE_SYSTEM_ADMIN_PASSWORD": "testing2",
+        "CREATE_SYSTEM_ADMIN_FNAME": "Rahim",
+        "CREATE_SYSTEM_ADMIN_LNAME": "Bhaloo - Owner",
+        "CREATE_SYSTEM_ADMIN_EMAIL": "rahim.bhaloo@absorblms.com"
+      
+    },
+    "createReviewer": {
+        "CREATE_REVIEWER_USERNAME": "rbhaloo3+4@gmail.com",
+        "CREATE_REVIEWER_PASSWORD": "testing2",
+        "CREATE_REVIEWER_FNAME": "Rahim",
+        "CREATE_REVIEWER_LNAME": "Test4 - Reviewer",
+        "CREATE_REVIEWER_FULLNAME": "Rahim Test4 - Reviewer",
+        "CREATE_REVIEWER_EMAIL": "rbhaloo3+4@gmail.com",
+        "CREATE_TYPE_REVIEWER": "Reviewer"
+    },
+    "createPublisher": {
+        "CREATE_PUBLISHER_USERNAME": "rbhaloo3+10@gmail.com",
+        "CREATE_PUBLISHER_PASSWORD": "testing2",
+        "CREATE_PUBLISHER_FNAME": "Rahim",
+        "CREATE_PUBLISHER_LNAME": "Test10 - publisher",
+        "CREATE_PUBLISHER_FULLNAME":  "Rahim Test10 - publisher",
+        "CREATE_PUBLISHER_EMAIL": "rbhaloo3+10@gmail.com",
+        "CREATE_TYPE_PUBLISHER": "publisher"
+    },
+    "createProducer": {
+        "CREATE_PRODUCER_USERNAME": "rbhaloo3+13@gmail.com",
+        "CREATE_PRODUCER_PASSWORD": "testing2",
+        "CREATE_PRODUCER_FNAME": "Rahim",
+        "CREATE_PRODUCER_LNAME": "Test13 - Producer",
+        "CREATE_PRODUCER_FULLNAME":  "Rahim Test13 - Producer",
+        "CREATE_PRODUCER_EMAIL": "rbhaloo3+13@gmail.com",
+        "CREATE_TYPE_PRODUCER": "Producer"
+    },
+    "createOwner": {
+        "CREATE_OWNER_USERNAME": "rbhaloo3+212@gmail.com",
+        "CREATE_OWNER_PASSWORD": "testing2",
+        "CREATE_OWNER_FNAME": "Rahim",
+        "CREATE_OWNER_LNAME": "Test212 - Owner",
+        "CREATE_OWNER_FULLNAME":  "Rahim Test212 - Owner",
+        "CREATE_OWNER_EMAIL": "rbhaloo3+212@gmail.com",
+        "CREATE_TYPE_OWNER": "Owner"
+    },
+    "createAuthor": {
+        "CREATE_AUTHOR_USERNAME": "rbhaloo3+7@gmail.com",
+        "CREATE_AUTHOR_PASSWORD": "testing2",
+        "CREATE_AUTHOR_FNAME": "Rahim",
+        "CREATE_AUTHOR_LNAME": "Test7 - author",
+        "CREATE_AUTHOR_FULLNAME":  "Rahim Test7 - author",
+        "CREATE_AUTHOR_EMAIL": "rbhaloo3+7@gmail.com",
+        "CREATE_TYPE_AUTHOR": "author"
+    },
+    "createDesigner": {
+        "CREATE_DESIGNER_USERNAME": "rbhaloo3+9@gmail.com",
+        "CREATE_DESIGNER_PASSWORD": "testing2",
+        "CREATE_DESIGNER_FNAME": "Rahim",
+        "CREATE_DESIGNER_LNAME": "Test9 - Designer",
+        "CREATE_DESIGNER_FULLNAME":  "Rahim Test9 - Designer",
+        "CREATE_DESIGNER_EMAIL": "rbhaloo3+9@gmail.com",
+        "CREATE_TYPE_DESIGNER": "Designer"
+    },
+    "createTrialUser": {
+        "CREATE_TRIAL_USERNAME": "rbhaloo3+9@gmail.com",
+        "CREATE_TRIAL_PASSWORD": "testing2",
+        "CREATE_TRIAL_FNAME": "Trial",
+        "CREATE_TRIAL_LNAME": "User",
+        "CREATE_TRIAL_FULLNAME":  "Trial User",
+        "CREATE_COMPANY_NAME":  "Trial 1",
+        "CREATE_COUNTRY_NAME":  "Zambia",
+        "CREATE_TYPE_TRIAL": "TRIAL",
+        "CREATE_TYPE_EMAILPRT1": "rbhaloo3+",
+        "CREATE_TYPE_EMAILPRT2": "@gmail.com"
+    },
+
+    "duplicateUsername": "GUIA-CED-User"
+}

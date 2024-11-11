@@ -1,0 +1,53 @@
+{
+    "client": {
+      "STR_CLIENT_ID": "8f16d141-9a22-4a11-8ab7-ec39810d1e4f",
+      "STR_NASA_CLIENT_ID": "44ce6a44-4766-492a-b9f7-dc9a057b1b4d",
+      "STR_ALT_CLIENT_ID": "87cf798e-c19e-4703-a871-6c379afad0ee",
+      "STR_API_KEY": "TCLhtarj6KNj6QlRxhzw6rUpupMnLI-4",
+      "STR_NASA_API_KEY": "RBlct1hcml9pnQY3CXYZUQw7_xF1LNe0",
+      "STR_ALT_API_KEY": "zpAionOayfqbp02ZulBpMq8XK5nQRzNk",
+      "STR_ROOTURL": "https://guia.qa.myabsorb.com/",
+      "STR_NASA_ROOTURL": "https://guianasa.qa.myabsorb.com/",
+      "STR_ALT_ROOTURL": "https://guia-nasa-nle-alt.qa.myabsorb.com/"
+    },
+    "envVars": {
+      "STR_COUPON_40_CODE": "RUzkgRhpb-OcOKH96xFm",
+      "STR_NASA_COUPON_40_CODE": "1Z6nrPch9OOhSRFHxsqF",
+      "STR_ALT_COUPON_40_CODE": "N6y4T1NBk8YaVjgYDZpm",
+      "STR_COUPON_20_EXPIRED_CODE": "qUAsE_Q24foqYOPJlB_v",
+      "STR_NASA_COUPON_20_EXPIRED_CODE": "3nrRSo2rJbuAqemqKoO0",
+      "STR_ALT_COUPON_20_EXPIRED_CODE": "i8kgePrOadREMUkqA_WK",
+      "STR_COUPON_10_USEDUP_CODE": "qqowmcRBFTzf3qk38iIg",
+      "STR_NASA_COUPON_10_USEDUP_CODE": "gNiQ8YZY0LmHE_qblGn-",
+      "STR_ALT_COUPON_10_USEDUP_CODE": "DxgEEuZ9mo6WAWVuDFaB",
+      "STR_COUPON_10_SINGLE_USE_PER_LEARNER_CODE": "UjWWowSBZbzp5NcsLJTx",
+      "STR_NASA_COUPON_10_SINGLE_USE_PER_LEARNER_CODE": "zjTuZuiXGZomTv19R8of",
+      "STR_ALT_COUPON_10_SINGLE_USE_PER_LEARNER_CODE": "PzMrFiO_y7rud_08pOSk",
+      "STR_COURSE_ILC_02_ADMIN_APPROVAL_ID": "3cbaeccb-dc6f-4d14-8f03-5ae1aafcb30c",
+      "STR_COURSE_OC_02_ADMIN_APPROVAL_ID": "d91aae21-6958-47fd-bd73-0a8328671a13",
+      "STR_COURSE_CURR_02_ADMIN_APPROVAL_ID": "f9d156eb-0441-4043-bc52-d1afcac06f07",
+      "STR_DEPT_TOP_ID": "772a90d3-e789-4c5c-beeb-4071233fbf90",
+      "STR_NASA_DEPT_TOP_ID": "970a27c0-0ddd-44f7-89b4-05570b58a6c9",
+      "STR_ALT_DEPT_TOP_ID": "59540af6-068b-4e30-9c5f-3baea43189ac",
+      "STR_EKEY01_KEY": "9WDwKoQiAu0lZdyzptE4",
+      "STR_NASA_EKEY01_KEY": "gi0kNrp9A77l-WoqVzL-",
+      "STR_ALT_EKEY01_KEY": "8A80vlzJU4i4IORQtlnl",
+      "STR_EKEY_EXPIRED_KEY": "3Gj3e1or42CqynlZnqW3",
+      "STR_NASA_EKEY_EXPIRED_KEY": "FfjTjhkcZ6Hnn7mKGzoe",
+      "STR_ALT_EKEY_EXPIRED_KEY": "U6kniZtPysXKYecuf2SE",
+      "STR_EKEY_DEPLETED_KEY": "akApA7Lfg1iiLwjyrFnM",
+      "STR_NASA_EKEY_DEPLETED_KEY": "ZH7rE7ZAqdg8UAzT8VJl",
+      "STR_ALT_EKEY_DEPLETED_KEY": "KLWBJdYI6TXzaF5aTCzC",
+      "STR_LEARNER_TRANS_CERT_COURSE_OC_FILTER_01_CERTIFICATE_ID": "b731ba8c-2a94-4729-943a-918670ab5985",
+      "STR_NASA_LEARNER_TRANS_CERT_COURSE_OC_FILTER_01_CERTIFICATE_ID": "26681697-62b8-47ba-b3d0-bf46e053d0ec",
+      "STR_ALT_LEARNER_TRANS_CERT_COURSE_OC_FILTER_01_CERTIFICATE_ID": "73cedd75-7b46-4614-9830-00a0d58b1604"
+    },
+  
+  "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }
+  

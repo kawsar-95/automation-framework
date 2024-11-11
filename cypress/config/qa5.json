@@ -1,0 +1,32 @@
+{
+    "baseUrl": "https://machinelearning.5.qa.absorb.ad/",
+    "experimentalStudio": true,
+    
+    "defaultCommandTimeout": 30000,
+    "requestTimeout": 10000,
+    "env": {
+        "environment": "qa5",
+        "api_Key": "xclQRjxqeCgFrPRmXtYF-_wH1Y7Yqn5u",
+        "client_ID": "fdad831f-1c02-494d-8d02-d9d699c66c71",
+        "topDEPT_ID": "bc16a743-791a-4425-9f72-daad0186a9f7",
+        "COURSE_ILC_02_ADMIN_APPROVAL_ID": "16514c65-a01c-4216-ac04-ae65d9e673ed",
+        "COURSE_CURR_02_ADMIN_APPROVAL_ID": "40cea549-18bd-483e-b34d-59bb6d45743a",
+        "COURSE_OC_02_ADMIN_APPROVAL_ID": "4a0c41b9-3cb5-4605-b88e-5fb525b36925",
+        "A_COLLABORATION_ID": "e2c47f5f-6e6a-4b34-830e-e1e7855fcd7a",
+        "B_COLLABORATION_ID": "1b5c309c-3828-4525-b233-419ddfbffad4",
+        "ROOT_PORTAL": "https://5.qa.myabsorb.com/",
+        "createURL": "https://staging.absorbcreate.com/",
+        "createProdURL": "https://app.absorbcreate.com/",
+        "createTrialURL": "https://staging.absorbcreate.com/trial"
+    },
+    "retries": {
+        "runMode": 0,
+        "openMode": 0
+    },
+    "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

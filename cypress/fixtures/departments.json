@@ -1,0 +1,20 @@
+{
+"DEPT_TOP_NAME": "Top Level Dept",
+
+"SUB_DEPT_A_NAME": "Sub-Dept A",
+"SUB_DEPT_B_NAME": "Sub-Dept B",
+"SUB_DEPT_C_NAME": "Sub-Dept C - No Dashboards",
+"SUB_DEPT_D_NAME": "Sub-Dept D - Dashboards Testing",
+
+"DEPTB_NAME": "DEPTB",
+"DEPTC_NAME": "DEPTC",
+"DEPTD_NAME": "DEPTD",
+"DEPTE_NAME": "DEPTE",
+
+"SUB_DEPT_A_SUB_DEPT_NAME": "Sub Dept A's sub dept AA",
+"SUB_DEPT_B_SUB_DEPT_NAME": "Sub Dept B's sub dept BB",
+"SUB_DEPT_C_SUB_DEPT_NAME": "Sub Dept C's sub dept CC",
+"SUB_DEPT_D_SUB_DEPT_NAME": "Sub Dept D's sub dept DD",
+"ENROLLMENT_RULE_DEPT_NAME": "Enrollment Rule Dept",
+"ENROLLMENT_RULE_SUB_DEPT_NAME": "Enrollment Rule - Sub Dept"
+}

@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://testclientlarge1.lts.myabsorb.com",
+  "experimentalStudio": true,
+  
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 10000,
+  "env": {
+    "environment": "LTS",
+    "api_Key": "RpxA24WzsAqYU90nsOxQmI7idbTplScs",
+    "client_ID": "237074e6-2d95-4141-9846-35202bdcb566",
+    "topDEPT_ID":"21b3f09a-6ef6-4a7a-bf3b-b89257600d46",
+    "COURSE_CURR_02_ADMIN_APPROVAL_ID": "24afa69f-2a45-45b3-bee8-8f31e42833a8",
+    "COURSE_OC_02_ADMIN_APPROVAL_ID": "be2cc104-b453-4643-aba7-e4b6ba357cda",
+    "ROOT_PORTAL": "https://blatant.lts.myabsorb.com",
+    "createURL": "https://staging.absorbcreate.com/",
+    "createProdURL": "https://app.absorbcreate.com/",
+    "createTrialURL": "https://staging.absorbcreate.com/trial"   
+  },
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
+  "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

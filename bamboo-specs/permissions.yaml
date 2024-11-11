@@ -1,0 +1,24 @@
+- roles:
+  - logged-in
+  permissions:
+  - view
+  - viewConfiguration
+- groups:
+  - Dept - QA
+  permissions:
+  - view
+  - build
+  - viewConfiguration
+- users:
+  - chakravarthi.kalyan
+  - curtis.jensen
+  - hasan.tasdemir
+  - nicole.cakir
+  - rahim.bhaloo
+  permissions:
+  - view
+  - build
+  - viewConfiguration
+  - admin
+
+

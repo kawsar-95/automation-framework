@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://rahim.3.qa.absorb.ad",
+  "experimentalStudio": true,
+  
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 10000,
+  "env": {
+      "environment": "qa3",
+      "api_Key": "3Fdv-9LT75acPwtUcVWcm9QsV9uBod_2",
+      "client_ID": "98d5b1d7-365d-48d2-8727-63afc80ca07e",
+      "topDEPT_ID": "eaff084f-de55-4d38-9ada-cc2081d34107",
+      "COURSE_CURR_02_ADMIN_APPROVAL_ID": "24afa69f-2a45-45b3-bee8-8f31e42833a8",
+      "COURSE_OC_02_ADMIN_APPROVAL_ID": "be2cc104-b453-4643-aba7-e4b6ba357cda",
+      "ROOT_PORTAL": "https://3.qa.myabsorb.com/",
+      "createURL": "https://staging.absorbcreate.com/",
+      "createProdURL": "https://app.absorbcreate.com/",
+      "createTrialURL": "https://staging.absorbcreate.com/trial"
+  },
+  "retries": {
+      "runMode": 0,
+      "openMode": 0
+  },
+  "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

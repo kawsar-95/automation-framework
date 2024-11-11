@@ -1,0 +1,24 @@
+{
+  "baseUrl": "https://dms.4.qa.absorb.ad",
+  "experimentalStudio": true,
+  
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 10000,
+  "env": {
+      "environment": "qa4",
+      "ROOT_PORTAL": "https://4.qa.myabsorb.com/",
+      "createURL": "https://staging.absorbcreate.com/",
+      "createProdURL": "https://app.absorbcreate.com/",
+      "createTrialURL": "https://staging.absorbcreate.com/trial"
+  },
+  "retries": {
+      "runMode": 0,
+      "openMode": 0
+  },
+  "video": false,
+
+    "reporter": "junit",
+    "reporterOptions": {
+      "mochaFile": "results/result-[hash].xml"
+    }
+  }

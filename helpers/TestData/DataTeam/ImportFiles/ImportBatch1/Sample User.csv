@@ -1,0 +1,4 @@
+Username,Department,FirstName,LastName,Supervisor,isAdmin
+QA10_Test01,Department Test 01,QA10_01,Test01,,0
+QA10_Test02,Department Test 02,QA10_02,Test02,QA10_Test01,1
+QA10_Test03,Department Test 01,QA10_03,Test03,,1

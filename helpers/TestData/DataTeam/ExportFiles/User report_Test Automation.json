@@ -1,0 +1,186 @@
+{
+  "ContactEmailAddresses": [],
+  "ExpressionGroups": [
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "Users1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    }
+  ],
+  "TableConnections": [
+    {
+      "Columns": [
+        {
+          "Name": "Name",
+          "Alias": "DepartmentName",
+          "Order": 5,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.Users_dbo.Departments_DepartmentId",
+      "TableSchema": "dbo",
+      "TableName": "Departments",
+      "AliasedTableName": "Departments1",
+      "Order": 1,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 2,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Name",
+          "Alias": "Role",
+          "Order": 6,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.xUserRoles_dbo.Roles_Role_Id",
+      "TableSchema": "dbo",
+      "TableName": "Roles",
+      "AliasedTableName": "Roles1",
+      "Order": 4,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    },
+    {
+      "Columns": [
+        {
+          "Name": "ActiveStatus",
+          "Alias": "ActiveStatus",
+          "Order": 3,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "FirstName",
+          "Alias": "FirstName",
+          "Order": 0,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Username",
+          "Alias": "Username",
+          "Order": 2,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "LastName",
+          "Alias": "LastName",
+          "Order": 1,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "IsAdmin",
+          "Alias": "IsAdmin",
+          "Order": 4,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "Users",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 0,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "FK_dbo.xUserRoles_dbo.Users_User_Id",
+      "TableSchema": "dbo",
+      "TableName": "xUserRoles",
+      "AliasedTableName": "xUserRoles1",
+      "Order": 3,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 1
+    }
+  ],
+  "ClientId": "4b28d81f-d6e3-4dd2-821a-b16e8ddc674e",
+  "Name": "User report_Test Automation",
+  "FileName": "UserReportAutomation",
+  "FileEncoding": 0,
+  "QuoteAllFields": false,
+  "Delimiter": ",",
+  "Description": "User report with active status, roles and departments",
+  "JiraId": "DATA-2483",
+  "CronExpression": null,
+  "TimeZoneId": null,
+  "CommandTimeout": 60,
+  "FileType": 0,
+  "DateAdded": "2023-06-19T22:10:52.75",
+  "DateEdited": "2023-06-19T22:20:10.07",
+  "AddedBy": "qa.dms@absorblms.com",
+  "EditedBy": "qa.dms@absorblms.com",
+  "IsDeleted": false,
+  "DateDeleted": null,
+  "AppendTimestamp": false,
+  "FoldersDeleteHangfireJobId": null,
+  "AppendClientNameAndId": true,
+  "DeliveryMethod": 0,
+  "FtpProtocol": null,
+  "FtpUsername": null,
+  "FtpPassword": null,
+  "FtpServerUrl": null,
+  "FtpChangeDirectoryLocation": null,
+  "FtpPort": null,
+  "FtpOverwriteExistingFile": false,
+  "FtpTransferMode": null,
+  "FtpTextEncoding": null,
+  "FtpConnectionMode": null,
+  "InnerOrs": true,
+  "OverrideDateTimeFormat": null,
+  "ExportType": 0
+}

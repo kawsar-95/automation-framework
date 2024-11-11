@@ -1,0 +1,313 @@
+{
+  "ContactEmailAddresses": [],
+  "ExpressionGroups": [
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "CourseEnrollments1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    },
+    {
+      "Expressions": [
+        {
+          "FilterValue": null,
+          "TableName": "Users1",
+          "ColumnName": "IsDeleted",
+          "PropertyType": 0,
+          "Operator": 12
+        }
+      ]
+    }
+  ],
+  "TableConnections": [
+    {
+      "Columns": [],
+      "Name": "Courses",
+      "TableSchema": "dbo",
+      "TableName": "Courses",
+      "AliasedTableName": "Courses1",
+      "Order": 0,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "FK_dbo.ActivityEnrollments_dbo.ActivityEnrollments_ChapterEnrollment_Id",
+      "TableSchema": "dbo",
+      "TableName": "ActivityEnrollments",
+      "AliasedTableName": "ActivityEnrollments2",
+      "Order": 3,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Score",
+          "Alias": "Score",
+          "Order": 7,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "TimeSpentTicks",
+          "Alias": "TimeSpentTicks",
+          "Order": 9,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "DateCompleted",
+          "Alias": "DateCompleted",
+          "Order": 8,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.CourseEnrollments_dbo.Courses_CourseId",
+      "TableSchema": "dbo",
+      "TableName": "CourseEnrollments",
+      "AliasedTableName": "CourseEnrollments1",
+      "Order": 1,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "FK_dbo.Questions_dbo.QuestionBanks_QuestionBankId",
+      "TableSchema": "dbo",
+      "TableName": "QuestionBanks",
+      "AliasedTableName": "QuestionBanks1",
+      "Order": 9,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "IsCorrect",
+          "Alias": "IsCorrect",
+          "Order": 5,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.UserAssessmentActivities_dbo.Attempts_AttemptId",
+      "TableSchema": "dbo",
+      "TableName": "UserAssessmentActivities",
+      "AliasedTableName": "UserAssessmentActivities1",
+      "Order": 5,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "LastName",
+          "Alias": "LastName",
+          "Order": 1,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Username",
+          "Alias": "Username",
+          "Order": 2,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "FirstName",
+          "Alias": "FirstName",
+          "Order": 0,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.CourseEnrollments_dbo.Users_UserId",
+      "TableSchema": "dbo",
+      "TableName": "Users",
+      "AliasedTableName": "Users1",
+      "Order": 11,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "FK_dbo.UserAssessmentAnswers_dbo.QuestionOptions_QuestionOption_Id",
+      "TableSchema": "dbo",
+      "TableName": "QuestionOptions",
+      "AliasedTableName": "QuestionOptions1",
+      "Order": 7,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "CourseEnrollments",
+      "TableSchema": "dbo",
+      "TableName": "CourseEnrollments",
+      "AliasedTableName": "CourseEnrollments1",
+      "Order": 10,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Name",
+          "Alias": "QuestionName",
+          "Order": 3,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        },
+        {
+          "Name": "Order",
+          "Alias": "Order",
+          "Order": 4,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.QuestionOptions_dbo.Questions_Question_Id",
+      "TableSchema": "dbo",
+      "TableName": "Questions",
+      "AliasedTableName": "Questions1",
+      "Order": 8,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "FK_dbo.ActivityEnrollments_dbo.CourseEnrollments_OnlineCourseEnrollment_Id",
+      "TableSchema": "dbo",
+      "TableName": "ActivityEnrollments",
+      "AliasedTableName": "ActivityEnrollments1",
+      "Order": 2,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [
+        {
+          "Name": "Response",
+          "Alias": "Response",
+          "Order": 6,
+          "SortOrder": null,
+          "IsDescending": null,
+          "IsGroupedBy": false,
+          "IsHidden": false,
+          "AggregateMethod": null
+        }
+      ],
+      "Name": "FK_dbo.UserAssessmentAnswers_dbo.UserAssessmentActivities_Activity_Id",
+      "TableSchema": "dbo",
+      "TableName": "UserAssessmentAnswers",
+      "AliasedTableName": "UserAssessmentAnswers1",
+      "Order": 6,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    },
+    {
+      "Columns": [],
+      "Name": "FK_dbo.Attempts_dbo.ActivityEnrollments_LessonEnrollmentId",
+      "TableSchema": "dbo",
+      "TableName": "Attempts",
+      "AliasedTableName": "Attempts1",
+      "Order": 4,
+      "ConditionalConnectingTable": null,
+      "ConditionalConnectingColumn": null,
+      "SourceConditionalConnectingColumn": null,
+      "JoinType": 0
+    }
+  ],
+  "ClientId": "4b28d81f-d6e3-4dd2-821a-b16e8ddc674e",
+  "Name": "Assessment report_Test Automation",
+  "FileName": "AssessmentReportAutomation",
+  "FileEncoding": 0,
+  "QuoteAllFields": false,
+  "Delimiter": ",",
+  "Description": null,
+  "JiraId": "DATA-2484",
+  "CronExpression": null,
+  "TimeZoneId": null,
+  "CommandTimeout": 60,
+  "FileType": 0,
+  "DateAdded": "2023-06-19T22:32:20.58",
+  "DateEdited": "2023-06-19T22:32:20.58",
+  "AddedBy": "qa.dms@absorblms.com",
+  "EditedBy": "qa.dms@absorblms.com",
+  "IsDeleted": false,
+  "DateDeleted": null,
+  "AppendTimestamp": false,
+  "FoldersDeleteHangfireJobId": null,
+  "AppendClientNameAndId": true,
+  "DeliveryMethod": 0,
+  "FtpProtocol": null,
+  "FtpUsername": null,
+  "FtpPassword": null,
+  "FtpServerUrl": null,
+  "FtpChangeDirectoryLocation": null,
+  "FtpPort": null,
+  "FtpOverwriteExistingFile": false,
+  "FtpTransferMode": null,
+  "FtpTextEncoding": null,
+  "FtpConnectionMode": null,
+  "InnerOrs": true,
+  "OverrideDateTimeFormat": null,
+  "ExportType": 0
+}
